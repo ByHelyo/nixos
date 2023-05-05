@@ -9,6 +9,7 @@
     pu = "push";
     a = "add";
     c = "checkout";
+    di = "diff";
   };
 
   extraConfig = {
