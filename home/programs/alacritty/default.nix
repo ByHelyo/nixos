@@ -6,13 +6,21 @@
   settings = {
     window = {
       title = "Alacritty";
-      opacity = 0.8;
+      opacity = 1;
     };
 
     font = {
       normal = {
         family = "JetBrainsMono Nerd Font Mono";
         style = "Regular";
+      };
+      bold = {
+        family = "JetBrainsMono Nerd Font Mono";
+	style = "Bold";
+      };
+      italic = {
+        family = "JetBrainsMono Nerd Font Mono";
+	style = "Italic";
       };
       size = 8.0;
     };
