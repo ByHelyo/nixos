@@ -4,7 +4,7 @@
 # * Theme Repo           : https://github.com/lr-tech/rofi-themes-collection
 # *******************************************************************************/
 
-{ pkgs, ... }:
+{ pkgs }:
 
 {
   enable = true;
