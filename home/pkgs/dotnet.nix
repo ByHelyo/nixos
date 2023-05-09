@@ -1,7 +1,6 @@
-{ pkgs, ... }:
+{ pkgs }:
 
-{
-  home.packages = with pkgs; [
-    dotnet-sdk
-  ];
-}
+with pkgs;
+[
+  dotnet-sdk
+]

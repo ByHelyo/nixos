@@ -16,11 +16,11 @@
       };
       bold = {
         family = "JetBrainsMono Nerd Font Mono";
-	style = "Bold";
+        style = "Bold";
       };
       italic = {
         family = "JetBrainsMono Nerd Font Mono";
-	style = "Italic";
+        style = "Italic";
       };
       size = 8.0;
     };

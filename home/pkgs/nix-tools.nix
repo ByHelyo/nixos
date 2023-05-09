@@ -1,7 +1,6 @@
-{ pkgs, ... }:
+{ pkgs }:
 
-{
-  home.packages = with pkgs; [
-    nixpkgs-fmt
-  ];
-}
+with pkgs;
+[
+  nixpkgs-fmt
+]
