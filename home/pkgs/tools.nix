@@ -3,11 +3,8 @@
 with pkgs;
 [
   discord
-  gitkraken
   flameshot
-  postman
   krita
-  insomnia
   pavucontrol
   teams
   vlc
@@ -22,9 +19,4 @@ with pkgs;
   obsidian
   gnome.nautilus
   blender
-] ++ (with jetbrains; [
-  idea-ultimate
-  clion
-  pycharm-professional
-  rider
-])
+]
