@@ -3,4 +3,5 @@
 with pkgs;
 [
   jdk
+  maven
 ]
