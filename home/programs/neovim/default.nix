@@ -22,6 +22,8 @@
     ccls
   ] ++ (with nodePackages; [
     typescript-language-server
+    svelte-language-server
+    vscode-langservers-extracted
   ]);
 
   plugins = with pkgs.vimPlugins; [
@@ -33,15 +35,15 @@
     # LSP
     nvim-lspconfig
     rust-tools-nvim
+
+    # Autocompletion
+    nvim-cmp
     cmp-buffer
     cmp-nvim-lsp
     cmp-nvim-lsp-signature-help
     cmp-nvim-lua
     cmp-path
     cmp-vsnip
-
-    # Autocompletion
-    nvim-cmp
 
     # Eyecandies
     nvim-treesitter.withAllGrammars
