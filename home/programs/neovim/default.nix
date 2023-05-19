@@ -6,12 +6,14 @@
 
   extraLuaConfig = lib.concatStrings [
     (builtins.readFile ./config/core.lua)
-    (builtins.readFile ./config/plugins/lualine.lua)
     (builtins.readFile ./config/plugins/onedarkpro.lua)
+    (builtins.readFile ./config/plugins/lualine.lua)
     (builtins.readFile ./config/plugins/tree-lua.lua)
-    (builtins.readFile ./config/plugins/telescope.lua)
-    (builtins.readFile ./config/plugins/lspconfig.lua)
     (builtins.readFile ./config/plugins/treesitter.lua)
+    (builtins.readFile ./config/plugins/telescope.lua)
+    (builtins.readFile ./config/plugins/rust-tools.lua)
+    (builtins.readFile ./config/plugins/nvim-cmp.lua)
+    (builtins.readFile ./config/plugins/lspconfig.lua)
   ];
 
   extraPackages = with pkgs; [
@@ -30,6 +32,17 @@
 
     # LSP
     nvim-lspconfig
+    rust-tools-nvim
+    cmp-buffer
+    cmp-nvim-lsp
+    cmp-nvim-lsp-signature-help
+    cmp-nvim-lua
+    cmp-path
+    cmp-vsnip
+    vim-vsnip
+
+    # Autocompletion
+    nvim-cmp
 
     # Eyecandies
     nvim-treesitter.withAllGrammars
