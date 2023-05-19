@@ -39,7 +39,6 @@
     cmp-nvim-lua
     cmp-path
     cmp-vsnip
-    vim-vsnip
 
     # Autocompletion
     nvim-cmp
@@ -51,5 +50,7 @@
 
     # Telescope
     telescope-nvim
+    plenary-nvim
+    popup-nvim
   ];
 }
