@@ -16,7 +16,6 @@ with pkgs;
   gpick
   zoom-us
   obs-studio
-  obsidian
   gnome.nautilus
   blender
 ]
