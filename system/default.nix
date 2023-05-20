@@ -3,8 +3,8 @@
 {
   imports = [
     ./user
+    ./device
     ./general.nix
-    ./desktop.nix
   ];
 
   virtualisation = import ./virtualisation.nix;
