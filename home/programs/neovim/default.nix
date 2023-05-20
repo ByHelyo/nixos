@@ -11,9 +11,9 @@
     (builtins.readFile ./config/plugins/tree-lua.lua)
     (builtins.readFile ./config/plugins/treesitter.lua)
     (builtins.readFile ./config/plugins/telescope.lua)
+    (builtins.readFile ./config/plugins/lspconfig.lua)
     (builtins.readFile ./config/plugins/rust-tools.lua)
     (builtins.readFile ./config/plugins/nvim-cmp.lua)
-    (builtins.readFile ./config/plugins/lspconfig.lua)
   ];
 
   extraPackages = with pkgs; [
@@ -44,6 +44,7 @@
     cmp-nvim-lua
     cmp-path
     cmp-vsnip
+    vim-vsnip
 
     # Eyecandies
     nvim-treesitter.withAllGrammars
