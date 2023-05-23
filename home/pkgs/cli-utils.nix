@@ -9,4 +9,5 @@ with pkgs;
   zip
   bat
   man-pages
+  fzf
 ]
