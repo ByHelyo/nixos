@@ -19,6 +19,7 @@
   extraPackages = with pkgs; [
     rust-analyzer
     rnix-lsp
+    cmake-language-server
     ccls
   ] ++ (with nodePackages; [
     typescript-language-server

@@ -6,6 +6,7 @@ capabilities.textDocument.completion.completionItem.snippetSupport = true
 lspconfig.rnix.setup{}
 lspconfig.tsserver.setup{}
 lspconfig.ccls.setup{}
+lspconfig.cmake.setup{}
 lspconfig.svelte.setup{}
 lspconfig.html.setup {
   capabilities = capabilities,
