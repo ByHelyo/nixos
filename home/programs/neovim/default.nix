@@ -39,8 +39,11 @@
 
     # Autocompletion
     nvim-cmp
+    lspkind-nvim
+
     cmp-buffer
     cmp-nvim-lsp
+
     cmp-nvim-lsp-signature-help
     cmp-nvim-lua
     cmp-path
