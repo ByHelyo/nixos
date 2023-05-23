@@ -2,6 +2,7 @@
 
 with pkgs;
 [
+  xclip
   ripgrep
   exa
   fd

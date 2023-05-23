@@ -36,7 +36,6 @@ vim.opt.shiftwidth = 4 -- Number of spaces for an indent
 
 vim.opt.ignorecase = true -- No case sensitive
 
-
 --
 -- Autocompletion
 --
