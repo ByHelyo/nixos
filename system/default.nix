@@ -8,4 +8,6 @@
   ];
 
   virtualisation = import ./virtualisation.nix;
+
+  programs.fish.enable = true;
 }
