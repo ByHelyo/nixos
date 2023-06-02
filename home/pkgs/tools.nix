@@ -18,4 +18,10 @@ with pkgs;
   obs-studio
   gnome.nautilus
   blender
-]
+  insomnia
+  postman
+] ++ (with jetbrains; [
+  idea-ultimate
+  clion
+  rider
+])

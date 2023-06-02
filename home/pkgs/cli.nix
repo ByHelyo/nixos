@@ -11,4 +11,8 @@ with pkgs;
   bat
   man-pages
   fzf
+  git
+  docker-compose
+  google-cloud-sdk
+  neofetch
 ]
