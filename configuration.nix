@@ -27,14 +27,9 @@
     LC_TIME = "fr_FR.UTF-8";
   };
 
-  # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
-  # List packages installed in system profile. To search, run:
-  # $ nix search wget
   environment.systemPackages = with pkgs; [
-    vim
-    git
   ];
 
   system.autoUpgrade.enable = true;
