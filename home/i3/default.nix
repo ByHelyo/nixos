@@ -29,21 +29,21 @@ in
       "XF86AudioLowerVolume" = "exec --no-startup-id ${pkgs.pulseaudio}/bin/pactl set-sink-mute @DEFAULT_SINK@ false, exec --no-startup-id ${pkgs.pulseaudio}/bin/pactl set-sink-volume @DEFAULT_SINK@ -5%";
       "XF86AudioMute" = "exec --no-startup-id ${pkgs.pulseaudio}/bin/pactl set-sink-mute @DEFAULT_SINK@ toggle";
 
-      "XF86MonBrightnessDown" = "exec ${pkgs.light}/bin/light -U 5";
-      "XF86MonBrightnessUp" = "exec ${pkgs.light}/bin/light -A 5";
+      "XF86MonBrightnessUp" = "exec --no-startup-id ${pkgs.brightnessctl}/bin/brightnessctl -q s 5%+";
+      "XF86MonBrightnessDown" = "exec --no-startup-id ${pkgs.brightnessctl}/bin/brightnessctl -q s 5%-";
 
       "${mod}+p" = "exec ${pkgs.flameshot}/bin/flameshot gui";
     };
 
     startup = [
-      {
-        command = "${pkgs.feh}/bin/feh --bg-scale ${wallpaper}";
-        always = true;
-        notification = false;
-      }
-      {
-        command = "${pkgs.discord}/bin/Discord";
-      }
+    {
+	    command = "${pkgs.feh}/bin/feh --bg-scale ${wallpaper}";
+	    always = true;
+	    notification = false;
+    }
+    {
+	    command = "${pkgs.discord}/bin/Discord";
+    }
     ];
   };
 }
