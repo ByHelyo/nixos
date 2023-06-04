@@ -12,7 +12,10 @@ in
   config = {
     modifier = mod;
     bars = [ ];
-    window.border = 0;
+    window = {
+      titlebar = false;
+      border = 0;
+    };
     gaps = {
       inner = 10;
       outer = 10;
