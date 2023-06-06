@@ -36,14 +36,14 @@ in
     };
 
     startup = [
-    {
-	    command = "${pkgs.feh}/bin/feh --bg-scale ${wallpaper}";
-	    always = true;
-	    notification = false;
-    }
-    {
-	    command = "${pkgs.discord}/bin/Discord";
-    }
+      {
+        command = "${pkgs.feh}/bin/feh --bg-scale ${wallpaper}";
+        always = true;
+        notification = false;
+      }
+      {
+        command = "${pkgs.discord}/bin/Discord";
+      }
     ];
   };
 }

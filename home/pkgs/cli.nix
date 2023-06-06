@@ -14,4 +14,5 @@ with pkgs;
   docker-compose
   google-cloud-sdk
   neofetch
+  awscli
 ]

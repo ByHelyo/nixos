@@ -12,7 +12,6 @@ with pkgs;
   firefox
   google-chrome
   google-chrome-dev
-  libreoffice
   gpick
   zoom-us
   obs-studio
