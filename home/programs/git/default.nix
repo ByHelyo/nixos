@@ -5,10 +5,11 @@
   userEmail = "byfranckhu@gmail.com";
   aliases = {
     st = "status";
-    com = "commit -v";
+    ci = "commit -v";
     pu = "push";
     a = "add";
-    c = "checkout";
+    co = "checkout";
+    cb = "checkout -b";
     di = "diff";
   };
 
