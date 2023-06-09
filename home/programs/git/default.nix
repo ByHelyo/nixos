@@ -7,10 +7,12 @@
     st = "status";
     ci = "commit -v";
     pu = "push";
+    pl = "pull";
     a = "add";
     co = "checkout";
-    cb = "checkout -b";
     di = "diff";
+    l = "log";
+    lo = "log --oneline --graph --decorate";
   };
 
   extraConfig = {
