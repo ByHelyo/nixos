@@ -11,18 +11,7 @@ let
     disabled = "#707880";
   };
 
-  config = {
-    backlight = {
-      card = "amdgpu_bl0";
-    };
-    battery = {
-      battery_name = "BAT1";
-      battery_adapter = "ADP1";
-    };
-    network = {
-      wireless = "wlo1";
-    };
-  };
+  config = import ./settings.nix;
 in
 
 {
