@@ -15,7 +15,7 @@ with pkgs;
   gpick
   zoom-us
   obs-studio
-  gnome.nautilus
+  cinnamon.nemo
   blender
   insomnia
   postman
