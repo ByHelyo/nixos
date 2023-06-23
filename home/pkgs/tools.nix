@@ -22,5 +22,4 @@ with pkgs;
 ] ++ (with jetbrains; [
   idea-ultimate
   clion
-  rider
 ])
