@@ -17,7 +17,6 @@
   ];
 
   extraPackages = with pkgs; [
-    rust-analyzer
     rnix-lsp
     cmake-language-server
     ccls
