@@ -12,7 +12,7 @@ with pkgs;
   fzf
   git
   docker-compose
-  google-cloud-sdk
   neofetch
-  awscli
+  terraform
+  ansible
 ]
