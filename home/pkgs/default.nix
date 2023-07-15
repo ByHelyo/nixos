@@ -11,6 +11,7 @@
   ++ (import ./nix-tools.nix { inherit pkgs; })
   ++ (import ./tools.nix { inherit pkgs; })
   ++ (import ./misc.nix { inherit pkgs; })
+  ++ (import ./rust.nix)
   ;
 
   fonts.fontconfig.enable = true;
