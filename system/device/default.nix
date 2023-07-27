@@ -2,8 +2,9 @@
 
 {
   imports = [
-    #./desktop.nix
-    ./laptop.nix
+    ./desktop.nix
+    #./laptop.nix
+    ./dualboot.nix
   ];
 
   boot.loader = {
