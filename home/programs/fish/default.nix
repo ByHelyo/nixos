@@ -14,6 +14,7 @@
     pn = "${pkgs.nodePackages.pnpm}/bin/pnpm";
     mkdir = "mkdir -pv";
     cl = "clear";
+    rm = "rm -vd";
   };
 
   shellAbbrs = {
