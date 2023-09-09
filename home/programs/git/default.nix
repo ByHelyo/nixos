@@ -2,7 +2,7 @@
   enable = true;
 
   userName = "Franck Hu";
-  userEmail = "byfranckhu@gmail.com";
+  userEmail = "byfranckhu@outlook.com";
   aliases = {
     st = "status";
     ci = "commit -v";
