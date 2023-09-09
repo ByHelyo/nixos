@@ -14,5 +14,6 @@ with pkgs;
   docker-compose
   neofetch
   terraform
+  python39
   ansible
 ]
