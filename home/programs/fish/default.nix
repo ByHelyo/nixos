@@ -15,6 +15,7 @@
     mkdir = "mkdir -pv";
     cl = "clear";
     rm = "rm -vd";
+    md = "md -pv";
   };
 
   shellAbbrs = {
