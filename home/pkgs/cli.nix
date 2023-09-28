@@ -16,4 +16,5 @@ with pkgs;
   terraform
   python39
   ansible
+  pkg-config
 ]
