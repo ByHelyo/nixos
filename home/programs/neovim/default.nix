@@ -6,7 +6,7 @@
 
   extraLuaConfig = lib.concatStrings [
     (builtins.readFile ./config/core.lua)
-    (builtins.readFile ./config/plugins/onedark.lua)
+    (builtins.readFile ./config/plugins/onedarkpro.lua)
     (builtins.readFile ./config/plugins/lualine.lua)
     (builtins.readFile ./config/plugins/tree-lua.lua)
     (builtins.readFile ./config/plugins/treesitter.lua)
@@ -52,7 +52,7 @@
     # Eyecandies
     nvim-treesitter.withAllGrammars
     lualine-nvim
-    onedark-nvim
+    onedarkpro-nvim
 
     # Telescope
     telescope-nvim
