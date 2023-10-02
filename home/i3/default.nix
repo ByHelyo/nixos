@@ -2,7 +2,7 @@
 
 let
   mod = "Mod4";
-  wallpaper = ./wallpaper.jpg;
+  wallpaper = ./wallpaper.png;
 in
 
 {

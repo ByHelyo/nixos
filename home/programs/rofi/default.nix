@@ -14,7 +14,7 @@
     * {
       bg0:    #242424E6;
       bg1:    #7E7E7E80;
-      bg2:    #FF5F15E6;
+      bg2:    #0860f2E6;
 
       fg0:    #DEDEDE;
       fg1:    #FFFFFF;
