@@ -6,6 +6,8 @@ let
       "clippy"
       "rust-src"
       "rustc"
+    ])
+    (latest.withComponents [
       "rustfmt"
       "rust-analyzer"
     ])
