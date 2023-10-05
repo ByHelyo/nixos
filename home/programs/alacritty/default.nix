@@ -22,7 +22,7 @@
         family = "JetBrainsMono Nerd Font Mono";
         style = "Italic";
       };
-      size = 8.0;
+      size = 7.0;
     };
 
     shell = {
