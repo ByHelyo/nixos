@@ -6,11 +6,9 @@ with pkgs;
   flameshot
   krita
   pavucontrol
-  teams
   vlc
   thunderbird
-  firefox
-  google-chrome
+  firefox-devedition
   google-chrome-dev
   gpick
   zoom-us
