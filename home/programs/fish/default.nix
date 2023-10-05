@@ -12,10 +12,10 @@
     tree = "${pkgs.exa}/bin/exa -T";
     cat = "${pkgs.bat}/bin/bat";
     pn = "${pkgs.nodePackages.pnpm}/bin/pnpm";
-    mkdir = "mkdir -pv";
     cl = "clear";
     rm = "rm -vd";
-    mk = "md -pv";
+    mkdir = "mkdir -pv";
+    dc = "${pkgs.docker-compose}/bin/docker-compose";
   };
 
   shellAbbrs = {
