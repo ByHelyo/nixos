@@ -6,31 +6,30 @@
 
   extraLuaConfig = lib.concatStrings [
     (builtins.readFile ./config/core.lua)
-    (builtins.readFile ./config/plugins/onedarkpro.lua)
-    (builtins.readFile ./config/plugins/lualine.lua)
-    (builtins.readFile ./config/plugins/tree-lua.lua)
-    (builtins.readFile ./config/plugins/treesitter.lua)
-    (builtins.readFile ./config/plugins/telescope.lua)
-    (builtins.readFile ./config/plugins/lspconfig.lua)
-    (builtins.readFile ./config/plugins/rust-tools.lua)
-    (builtins.readFile ./config/plugins/nvim-cmp.lua)
+    (builtins.readFile ./config/plugin/nvim-tree.lua)
+    (builtins.readFile ./config/plugin/treesitter.lua)
+    (builtins.readFile ./config/plugin/onedarkpro.lua)
+    (builtins.readFile ./config/plugin/lualine.lua)
+    (builtins.readFile ./config/plugin/telescope.lua)
+    (builtins.readFile ./config/plugin/bufferline.lua)
+    (builtins.readFile ./config/plugin/rust-tools.lua)
+    (builtins.readFile ./config/plugin/nvim-cmp.lua)
   ];
 
   extraPackages = with pkgs; [
-    rnix-lsp
-    cmake-language-server
-    ccls
   ] ++ (with nodePackages; [
-    typescript-language-server
-    svelte-language-server
-    vscode-langservers-extracted
   ]);
 
   plugins = with pkgs.vimPlugins; [
-
     # File tree
-    nvim-tree-lua
     nvim-web-devicons
+    nvim-tree-lua
+    bufferline-nvim
+
+    # Eyecandies
+    nvim-treesitter.withAllGrammars
+    lualine-nvim
+    onedarkpro-nvim
 
     # LSP
     nvim-lspconfig
@@ -38,21 +37,16 @@
 
     # Autocompletion
     nvim-cmp
-    lspkind-nvim
-
-    cmp-buffer
     cmp-nvim-lsp
-
-    cmp-nvim-lsp-signature-help
-    cmp-nvim-lua
+    cmp-buffer
     cmp-path
+
+    # Snippet
     cmp-vsnip
     vim-vsnip
 
-    # Eyecandies
-    nvim-treesitter.withAllGrammars
-    lualine-nvim
-    onedarkpro-nvim
+    cmp-nvim-lsp-signature-help
+    cmp-nvim-lua
 
     # Telescope
     telescope-nvim

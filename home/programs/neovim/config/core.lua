@@ -2,9 +2,7 @@
 -- General
 --
 
-vim.opt.termguicolors = true
-vim.g.loaded_netrw = 1
-vim.g.loaded_netrwPlugin = 1
+vim.opt.termguicolors = true -- Works best with RGB colors
 
 vim.opt.fileencoding = 'utf-8'
 vim.opt.swapfile = false
@@ -16,7 +14,7 @@ vim.opt.swapfile = false
 vim.wo.number = true
 vim.wo.relativenumber = true
 vim.opt.scrolloff = 1
-vim.opt.list = true
+vim.opt.list = true -- Display vim.opt.listchars
 vim.opt.listchars = {
     eol = "↴", -- Display "↴" for end of lines
     trail = "·", -- Display "·" for trailing spaces
@@ -28,17 +26,10 @@ vim.opt.listchars = {
 --
 
 vim.opt.expandtab = true -- Disable tab
-vim.opt.shiftwidth = 4 -- Number of spaces for an indent
+vim.opt.shiftwidth = 2 -- Number of spaces for an indent
 
 --
 -- Search
 --
 
 vim.opt.ignorecase = true -- No case sensitive
-
---
--- Autocompletion
---
-
-vim.o.completeopt = "menuone,noinsert,noselect"
-vim.opt.shortmess = vim.opt.shortmess + "c"
