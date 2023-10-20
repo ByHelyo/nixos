@@ -16,7 +16,6 @@ with pkgs;
   cinnamon.nemo
   blender
   insomnia
-  postman
 ] ++ (with jetbrains; [
   idea-ultimate
   clion

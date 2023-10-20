@@ -8,8 +8,8 @@
   '';
 
   shellAliases = {
-    ls = "${pkgs.exa}/bin/exa";
-    tree = "${pkgs.exa}/bin/exa -T";
+    ls = "${pkgs.eza}/bin/eza";
+    tree = "${pkgs.eza}/bin/eza -T";
     cat = "${pkgs.bat}/bin/bat";
     pn = "${pkgs.nodePackages.pnpm}/bin/pnpm";
     cl = "clear";

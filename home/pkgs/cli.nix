@@ -3,7 +3,7 @@
 with pkgs;
 [
   ripgrep
-  exa
+  eza
   fd
   unzip
   zip
@@ -16,5 +16,5 @@ with pkgs;
   terraform
   python39
   ansible
-  pkg-config
+  clang_16
 ]
