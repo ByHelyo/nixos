@@ -6,6 +6,7 @@ vim.opt.termguicolors = true -- Works best with RGB colors
 
 vim.opt.fileencoding = 'utf-8'
 vim.opt.swapfile = false
+vim.o.autoread = true
 
 --
 -- Interface

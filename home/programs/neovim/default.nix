@@ -11,12 +11,12 @@
     (builtins.readFile ./config/plugin/onedarkpro.lua)
     (builtins.readFile ./config/plugin/lualine.lua)
     (builtins.readFile ./config/plugin/telescope.lua)
-    (builtins.readFile ./config/plugin/bufferline.lua)
-    (builtins.readFile ./config/plugin/rust-tools.lua)
     (builtins.readFile ./config/plugin/nvim-cmp.lua)
+    (builtins.readFile ./config/plugin/lspconfig.lua)
   ];
 
   extraPackages = with pkgs; [
+    terraform-ls
   ] ++ (with nodePackages; [
   ]);
 
@@ -24,7 +24,6 @@
     # File tree
     nvim-web-devicons
     nvim-tree-lua
-    bufferline-nvim
 
     # Eyecandies
     nvim-treesitter.withAllGrammars
@@ -33,7 +32,6 @@
 
     # LSP
     nvim-lspconfig
-    rust-tools-nvim
 
     # Autocompletion
     nvim-cmp
