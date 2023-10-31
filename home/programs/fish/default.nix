@@ -16,6 +16,7 @@
     rm = "rm -vd";
     mkdir = "mkdir -pv";
     dc = "${pkgs.docker-compose}/bin/docker-compose";
+    tf = "${pkgs.terraform}/bin/terraform";
   };
 
   shellAbbrs = {

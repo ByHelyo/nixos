@@ -17,4 +17,5 @@ with pkgs;
   python39
   ansible
   clang_16
+  go
 ]
