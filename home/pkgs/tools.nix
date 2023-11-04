@@ -8,17 +8,12 @@ with pkgs;
   pavucontrol
   vlc
   firefox-devedition
-  google-chrome-dev
+  google-chrome
   gpick
   obs-studio
   cinnamon.nemo
   insomnia
-  (vscode-with-extensions.override {
-    vscode = vscodium;
-    vscodeExtensions = with vscode-extensions; [
-      rust-lang.rust-analyzer
-    ];
-  })
+  slack
 ] ++ (with jetbrains; [
   idea-ultimate
   clion

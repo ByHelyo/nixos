@@ -12,6 +12,7 @@
   ++ (import ./tools.nix { inherit pkgs; })
   ++ (import ./misc.nix { inherit pkgs; })
   ++ (import ./rust.nix)
+  ++ (import ./vscode.nix { inherit pkgs; })
   ;
 
   fonts.fontconfig.enable = true;
