@@ -1,1 +1,4 @@
-require'lspconfig'.terraformls.setup{}
+local lspconfig = require'lspconfig'
+
+lspconfig.terraformls.setup{}
+lspconfig.rnix.setup{}

@@ -17,6 +17,7 @@
 
   extraPackages = with pkgs; [
     terraform-ls
+    rnix-lsp
   ] ++ (with nodePackages; [
   ]);
 
