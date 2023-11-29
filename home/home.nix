@@ -12,5 +12,5 @@
   xsession.windowManager.i3 = import ./i3 { inherit pkgs lib; };
   xsession.enable = true;
 
-  home.stateVersion = "23.11";
+  home.stateVersion = "24.05";
 }
