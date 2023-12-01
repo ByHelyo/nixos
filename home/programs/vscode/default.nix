@@ -9,6 +9,6 @@
     vscodevim.vim
     eamodio.gitlens
     usernamehw.errorlens
-    jdinhlife.gruvbox
+    catppuccin.catppuccin-vsc
   ];
 }
