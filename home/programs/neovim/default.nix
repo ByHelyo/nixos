@@ -51,6 +51,7 @@ in
     luasnip
     nvim-cmp
     lualine-nvim
+    rustaceanvim
 
     nvim-web-devicons
     plenary-nvim
