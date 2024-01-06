@@ -10,6 +10,15 @@ let
       sha256 = "sha256-FU7IagWh7YqRRBITrYp8Sg3C0n9KCHjDugPhvB51oYw=";
     };
   };
+  mini-indentscope = pkgs.vimUtils.buildVimPlugin {
+    name = "mini.indentscope";
+    src = pkgs.fetchFromGitHub {
+      owner = "echasnovski";
+      repo = "mini.indentscope";
+      rev = "5a8369475cd7cd6f207a4d288406d03b0fc48bdb";
+      sha256 = "sha256-bMGAicmYlOzgI/dNb4Z6UQy5ZQFRUGsI84V2DTljtGM=";
+    };
+  };
 in
 
 {
@@ -31,6 +40,9 @@ in
     (builtins.readFile ./config/plugins/nvim-cmp.lua)
     (builtins.readFile ./config/plugins/telescope.lua)
     (builtins.readFile ./config/plugins/lualine.lua)
+    (builtins.readFile ./config/plugins/indent-blankline.lua)
+    (builtins.readFile ./config/plugins/mini-indentscope.lua)
+    (builtins.readFile ./config/plugins/ts-autotags.lua)
   ];
 
   extraPackages = with pkgs; [
@@ -52,6 +64,9 @@ in
     nvim-cmp
     lualine-nvim
     rustaceanvim
+    indent-blankline-nvim
+    mini-indentscope
+    nvim-ts-autotag
 
     nvim-web-devicons
     plenary-nvim
