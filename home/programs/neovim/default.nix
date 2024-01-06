@@ -1,5 +1,17 @@
 { pkgs, lib }:
 
+let
+  solarized-osaka-nvim = pkgs.vimUtils.buildVimPlugin {
+    name = "solarized-osaka.nvim";
+    src = pkgs.fetchFromGitHub {
+      owner = "craftzdog";
+      repo = "solarized-osaka.nvim";
+      rev = "d3272bc510deecd423833771e443ab0eaf8cd802";
+      sha256 = "sha256-FU7IagWh7YqRRBITrYp8Sg3C0n9KCHjDugPhvB51oYw=";
+    };
+  };
+in
+
 {
   enable = true;
   vimAlias = true;
@@ -8,6 +20,17 @@
     (builtins.readFile ./config/options.lua)
     (builtins.readFile ./config/keymaps.lua)
     (builtins.readFile ./config/autocmds.lua)
+    (builtins.readFile ./config/plugins/neo-tree.lua)
+    (builtins.readFile ./config/plugins/solarized-osaka.lua)
+    (builtins.readFile ./config/plugins/nvim-treesitter.lua)
+    (builtins.readFile ./config/plugins/git-signs.lua)
+    (builtins.readFile ./config/plugins/vim-illuminate.lua)
+    (builtins.readFile ./config/plugins/trouble.lua)
+    (builtins.readFile ./config/plugins/lspconfig.lua)
+    (builtins.readFile ./config/plugins/luasnip.lua)
+    (builtins.readFile ./config/plugins/nvim-cmp.lua)
+    (builtins.readFile ./config/plugins/telescope.lua)
+    (builtins.readFile ./config/plugins/lualine.lua)
   ];
 
   extraPackages = with pkgs; [
@@ -17,34 +40,23 @@
   ]);
 
   plugins = with pkgs.vimPlugins; [
-    # File tree
-    nvim-web-devicons
-    nvim-tree-lua
-
-    # Eyecandies
+    neo-tree-nvim
+    solarized-osaka-nvim
+    gitsigns-nvim
+    vim-illuminate
+    trouble-nvim
     nvim-treesitter.withAllGrammars
-    lualine-nvim
-    onedarkpro-nvim
-
-    # LSP
+    telescope-nvim
     nvim-lspconfig
-
-    # Autocompletion
+    luasnip
     nvim-cmp
+    lualine-nvim
+
+    nvim-web-devicons
+    plenary-nvim
     cmp-nvim-lsp
     cmp-buffer
     cmp-path
-
-    # Snippet
-    cmp-vsnip
-    vim-vsnip
-
-    cmp-nvim-lsp-signature-help
-    cmp-nvim-lua
-
-    # Telescope
-    telescope-nvim
-    plenary-nvim
-    popup-nvim
+    cmp_luasnip
   ];
 }
