@@ -1,1 +1,1 @@
-local lspconfig = require('lspconfig')
+require('lspconfig')

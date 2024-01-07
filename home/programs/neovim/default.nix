@@ -34,7 +34,6 @@ in
     (builtins.readFile ./config/plugins/nvim-treesitter.lua)
     (builtins.readFile ./config/plugins/git-signs.lua)
     (builtins.readFile ./config/plugins/vim-illuminate.lua)
-    (builtins.readFile ./config/plugins/trouble.lua)
     (builtins.readFile ./config/plugins/lspconfig.lua)
     (builtins.readFile ./config/plugins/luasnip.lua)
     (builtins.readFile ./config/plugins/nvim-cmp.lua)
@@ -56,7 +55,6 @@ in
     solarized-osaka-nvim
     gitsigns-nvim
     vim-illuminate
-    trouble-nvim
     nvim-treesitter.withAllGrammars
     telescope-nvim
     nvim-lspconfig
@@ -67,6 +65,7 @@ in
     indent-blankline-nvim
     mini-indentscope
     nvim-ts-autotag
+    telescope-file-browser-nvim
 
     nvim-web-devicons
     plenary-nvim
