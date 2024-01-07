@@ -3,7 +3,7 @@
 let
   fenix = import (fetchTarball "https://github.com/nix-community/fenix/archive/main.tar.gz") { };
   rust-toolchain = with fenix; combine [
-    (stable.withComponents [
+    (complete.withComponents [
       "cargo"
       "clippy"
       "rust-src"
@@ -13,7 +13,6 @@ let
       "rustfmt"
       "rust-analyzer"
     ])
-    targets.wasm32-unknown-unknown.stable.rust-std
   ];
 in
 
