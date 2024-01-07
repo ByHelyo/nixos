@@ -9,7 +9,17 @@ telescope.setup({
   pickers = {
     find_files = {
       theme = "ivy",
-    }
+      layout_config = {
+        height = 40
+      },
+    },
+    live_grep = {
+      theme = "ivy",
+      layout_config = {
+        height = 40
+      },
+      only_sort_text = true
+    },
   },
   extensions = {
     file_browser = {
