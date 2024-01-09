@@ -10,6 +10,5 @@
     fish = import ./fish { inherit pkgs; };
     neovim = import ./neovim { inherit pkgs lib; };
     starship = import ./starship;
-    vscode = import ./vscode { inherit pkgs; };
   };
 }
