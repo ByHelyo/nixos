@@ -42,12 +42,15 @@ in
     (builtins.readFile ./config/plugins/indent-blankline.lua)
     (builtins.readFile ./config/plugins/mini-indentscope.lua)
     (builtins.readFile ./config/plugins/ts-autotags.lua)
+    (builtins.readFile ./config/plugins/dressing.lua)
   ];
 
   extraPackages = with pkgs; [
     terraform-ls
     rnix-lsp
+    tailwindcss-language-server
   ] ++ (with nodePackages; [
+    typescript-language-server
   ]);
 
   plugins = with pkgs.vimPlugins; [
@@ -66,6 +69,8 @@ in
     mini-indentscope
     nvim-ts-autotag
     telescope-file-browser-nvim
+    dressing-nvim
+    friendly-snippets
 
     nvim-web-devicons
     plenary-nvim
