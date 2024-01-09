@@ -1,6 +1,6 @@
-vim.opt.completeopt = {'menuone', 'noselect', 'noinsert'}
+vim.opt.completeopt = { "menuone", "noselect", "noinsert" }
 
-local cmp = require'cmp'
+local cmp = require("cmp")
 require("luasnip.loaders.from_vscode").lazy_load()
 
 cmp.setup({
@@ -27,9 +27,9 @@ cmp.setup({
     end,
   }),
   sources = cmp.config.sources({
-    { name = 'nvim_lsp' },
-    { name = 'luasnip' },
-    { name = 'buffer' },
-    { name = 'path' },
+    { name = "nvim_lsp" },
+    { name = "luasnip" },
+    { name = "buffer" },
+    { name = "path" },
   }),
 })

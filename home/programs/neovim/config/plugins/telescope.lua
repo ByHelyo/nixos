@@ -1,6 +1,6 @@
-local telescope = require('telescope')
-local fb_actions = require "telescope._extensions.file_browser.actions"
-local builtin = require('telescope.builtin')
+local telescope = require("telescope")
+local fb_actions = require("telescope._extensions.file_browser.actions")
+local builtin = require("telescope.builtin")
 
 telescope.setup({
   defaults = {
@@ -11,15 +11,15 @@ telescope.setup({
     find_files = {
       theme = "ivy",
       layout_config = {
-        height = 40
+        height = 40,
       },
     },
     live_grep = {
       theme = "ivy",
       layout_config = {
-        height = 40
+        height = 40,
       },
-      only_sort_text = true
+      only_sort_text = true,
     },
   },
   extensions = {
@@ -31,7 +31,7 @@ telescope.setup({
       respect_gitignore = false,
       grouped = true,
       layout_config = {
-        height = 40
+        height = 40,
       },
       initial_mode = "normal",
       mappings = {
@@ -72,8 +72,8 @@ telescope.setup({
   },
 })
 
-telescope.load_extension "file_browser"
+telescope.load_extension("file_browser")
 
 vim.keymap.set("n", "<Leader>fb", ":Telescope file_browser<CR>", { noremap = true })
-vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})
+vim.keymap.set("n", "<leader>ff", builtin.find_files, {})

@@ -1,4 +1,4 @@
-local lspconfig = require('lspconfig')
+local lspconfig = require("lspconfig")
 local cmp_nvim_lsp = require("cmp_nvim_lsp")
 
 local keymap = vim.keymap
@@ -25,7 +25,7 @@ local on_attach = function(client, bufnr)
   keymap.set("n", "K", vim.lsp.buf.hover, opts)
 
   opts.desc = "Show signature help"
-  keymap.set('n', 'gK', vim.lsp.buf.signature_help, opts)
+  keymap.set("n", "gK", vim.lsp.buf.signature_help, opts)
 
   opts.desc = "See available code actions"
   keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
@@ -39,18 +39,18 @@ end
 
 local capabilities = cmp_nvim_lsp.default_capabilities()
 
-lspconfig.tsserver.setup{
+lspconfig.tsserver.setup({
   capabilities = capabilities,
-  on_attach = on_attach
-}
+  on_attach = on_attach,
+})
 
-lspconfig.tailwindcss.setup{
+lspconfig.tailwindcss.setup({
   capabilities = capabilities,
-  on_attach = on_attach
-}
+  on_attach = on_attach,
+})
 
 vim.g.rustaceanvim = {
   server = {
-    on_attach = on_attach
-  }
+    on_attach = on_attach,
+  },
 }

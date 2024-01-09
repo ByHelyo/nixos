@@ -1,4 +1,3 @@
-require('illuminate').configure({
+require("illuminate").configure({
   delay = 200,
 })
-

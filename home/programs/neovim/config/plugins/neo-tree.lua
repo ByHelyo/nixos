@@ -5,6 +5,6 @@ require("neo-tree").setup({
       expander_collapsed = "",
       expander_expanded = "",
       expander_highlight = "NeoTreeExpander",
-    }
-  }
+    },
+  },
 })
