@@ -49,6 +49,7 @@ in
     terraform-ls
     rnix-lsp
     tailwindcss-language-server
+    ccls
   ] ++ (with nodePackages; [
     typescript-language-server
   ]);
@@ -71,6 +72,7 @@ in
     telescope-file-browser-nvim
     dressing-nvim
     friendly-snippets
+    telescope-fzf-native-nvim
 
     nvim-web-devicons
     plenary-nvim

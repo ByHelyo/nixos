@@ -10,16 +10,17 @@ telescope.setup({
   pickers = {
     find_files = {
       theme = "ivy",
+      hidden = true,
       layout_config = {
         height = 40,
       },
     },
     live_grep = {
       theme = "ivy",
+      hidden = true,
       layout_config = {
         height = 40,
       },
-      only_sort_text = true,
     },
   },
   extensions = {
@@ -73,6 +74,7 @@ telescope.setup({
 })
 
 telescope.load_extension("file_browser")
+telescope.load_extension("fzf")
 
 vim.keymap.set("n", "<Leader>fb", ":Telescope file_browser<CR>", { noremap = true })
 vim.keymap.set("n", "<leader>fg", builtin.live_grep, {})

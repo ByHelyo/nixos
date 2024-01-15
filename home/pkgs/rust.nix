@@ -13,6 +13,7 @@ let
       "rustfmt"
       "rust-analyzer"
     ])
+    targets.wasm32-unknown-unknown.stable.rust-std
   ];
 in
 

@@ -49,6 +49,11 @@ lspconfig.tailwindcss.setup({
   on_attach = on_attach,
 })
 
+lspconfig.ccls.setup({
+  capabilities = capabilities,
+  on_attach = on_attach,
+})
+
 vim.g.rustaceanvim = {
   server = {
     on_attach = on_attach,
