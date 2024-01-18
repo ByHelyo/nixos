@@ -20,11 +20,11 @@ jobs:
   nixpkgs-fmt:
     runs-on: ubuntu-latest
     steps:
-    - name: Install nix
-      uses: cachix/install-nix-action@v25
-      with:
+      - name: Install nix
+        uses: cachix/install-nix-action@v25
+        with:
           nix_path: nixpkgs=channel:nixos:unstable
-    - name: Checkout repository
-      uses: actions/checkout@v4
-    - name: Check format
-      run: nix run nixpkgs#nixpkgs-fmt -- . --check
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Check format
+        run: nix run nixpkgs#nixpkgs-fmt -- . --check
