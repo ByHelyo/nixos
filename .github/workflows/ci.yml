@@ -21,7 +21,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Install nix
-      uses: cachix/install-nix-actions@v16
+      uses: cachix/install-nix-action@v25
       with:
           nix_path: nixpkgs=channel:nixos:unstable
     - name: Checkout repository
