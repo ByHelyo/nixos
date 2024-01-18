@@ -6,14 +6,25 @@ on:
       - main
 
 jobs:
-  checks:
+  stylua:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Runs stylua
+      - name: Check format
         uses: JohnnyMorganz/stylua-action@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           version: latest
           args: --check .
+  nixpkgs-fmt:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install nix
+      uses: cachix/install-nix-actions@v16
+      with:
+          nix_path: nixpkgs=channel:nixos:unstable
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Check format
+      run: nix run nixpkgs#nixpkgs-fmt -- . --check
