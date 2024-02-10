@@ -3,8 +3,10 @@
 {
   services.xserver = {
     enable = true;
-    layout = "us";
-    xkbVariant = "intl";
+    xkb = {
+      variant = "intl";
+      layout = "us";
+    };
     libinput.enable = true;
     #xserver.videoDrivers = [ "nvidia" ];
 
