@@ -14,6 +14,7 @@ with pkgs;
   cinnamon.nemo
   insomnia
   slack
+  chromium
 ] ++ (with jetbrains; [
   idea-ultimate
   clion

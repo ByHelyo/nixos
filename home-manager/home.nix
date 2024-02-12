@@ -7,6 +7,9 @@
     ./programs
   ];
 
+  home.username = "helyo";
+  home.homeDirectory = "/home/helyo";
+
   nixpkgs.config.allowUnfree = true;
 
   xsession.windowManager.i3 = import ./i3 { inherit pkgs lib; };

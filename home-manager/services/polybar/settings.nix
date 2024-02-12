@@ -3,8 +3,8 @@
     card = "amdgpu_bl0";
   };
   battery = {
-    battery_name = "BAT0";
-    battery_adapter = "AC";
+    battery_name = "BAT1";
+    battery_adapter = "ACAD";
   };
   network = {
     wireless = "wlp3s0";

@@ -1,11 +1,6 @@
 { ... }:
 
 {
-  imports = [
-    ./user
-    ./displayserver
-  ];
-
   boot.loader = {
     systemd-boot = {
       enable = true;
@@ -16,7 +11,7 @@
   };
 
   networking = {
-    hostName = "nixos";
+    hostName = "ideapad";
     networkmanager.enable = true;
   };
 
@@ -35,6 +30,4 @@
 
   programs.light.enable = true;
   console.keyMap = "us-acentos";
-
-  virtualisation = import ./virtualisation.nix;
 }

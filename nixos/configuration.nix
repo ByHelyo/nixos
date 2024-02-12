@@ -1,14 +1,6 @@
 { pkgs, ... }:
 
 {
-  imports =
-    [
-      # Include the results of the hardware scan.
-      ./hardware-configuration.nix
-      ./system
-      <home-manager/nixos>
-    ];
-
   # Set your time zone.
   time.timeZone = "Europe/Paris";
 
