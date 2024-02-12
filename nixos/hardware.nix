@@ -10,10 +10,7 @@
     efi.canTouchEfiVariables = true;
   };
 
-  networking = {
-    hostName = "ideapad";
-    networkmanager.enable = true;
-  };
+  networking.networkmanager.enable = true;
 
   sound.enable = false;
   security.rtkit.enable = true;
