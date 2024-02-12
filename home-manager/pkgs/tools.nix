@@ -3,19 +3,15 @@
 with pkgs;
 [
   discord
+  slack
   flameshot
-  krita
   pavucontrol
   vlc
-  firefox-devedition
-  google-chrome
   gpick
-  obs-studio
   cinnamon.nemo
   insomnia
-  slack
+
+  google-chrome
   chromium
-] ++ (with jetbrains; [
-  idea-ultimate
-  clion
-])
+  firefox-devedition
+]

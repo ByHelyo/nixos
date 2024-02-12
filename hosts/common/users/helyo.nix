@@ -1,9 +1,5 @@
-{ ... }:
-
 {
-  users.users.helyo = {
-    isNormalUser = true;
-    description = "Franck Hu";
-    extraGroups = [ "networkmanager" "wheel" ];
-  };
+  isNormalUser = true;
+  description = "Franck Hu";
+  extraGroups = [ "networkmanager" "wheel" ];
 } 
