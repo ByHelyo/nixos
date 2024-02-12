@@ -20,7 +20,7 @@
             {
               home-manager.useGlobalPkgs = true;
               home-manager.useUserPackages = true;
-              home-manager.users.helyo = import ./home-manager/home.nix;
+              home-manager.users.helyo = import ./home-manager/homes/ideapad.nix;
             }
           ];
         in
@@ -30,7 +30,7 @@
             system = "x86_64-linux";
 
             modules = [
-              ./nixos/ideapad
+              ./hosts/ideapad
             ] ++ defaultModules;
           };
         };
