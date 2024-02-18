@@ -1,19 +1,32 @@
-{ pkgs, lib, ... }:
+{ inputs, pkgs, lib, ... }:
 
 {
+  imports = [
+    ../fonts.nix
+  ];
+
+  nixpkgs = {
+    overlays = [
+      inputs.fenix.overlays.default
+    ];
+
+    config = {
+      allowUnfree = true;
+    };
+  };
+
   home = {
     username = "helyo";
     homeDirectory = "/home/helyo";
 
-    packages = with pkgs; [
-      (pkgs.nerdfonts.override { fonts = [ "JetBrainsMono" ]; })
-    ]
-    ++ (import ../pkgs/cli.nix { inherit pkgs; })
-    ++ (import ../pkgs/java.nix { inherit pkgs; })
-    ++ (import ../pkgs/js.nix { inherit pkgs; })
-    ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
-    ++ (import ../pkgs/tools.nix { inherit pkgs; })
-    ++ (import ../pkgs/misc.nix { inherit pkgs; })
+    packages = with pkgs; [ ]
+      ++ (import ../pkgs/cli.nix { inherit pkgs; })
+      ++ (import ../pkgs/java.nix { inherit pkgs; })
+      ++ (import ../pkgs/js.nix { inherit pkgs; })
+      ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
+      ++ (import ../pkgs/tools.nix { inherit pkgs; })
+      ++ (import ../pkgs/misc.nix { inherit pkgs; })
+      ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
     ;
   };
 
@@ -36,9 +49,6 @@
     enable = true;
     windowManager.i3 = import ../i3 { inherit pkgs lib; };
   };
-
-  fonts.fontconfig.enable = true;
-  nixpkgs.config.allowUnfree = true;
 
   home.stateVersion = "24.05";
 }

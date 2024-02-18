@@ -4,6 +4,7 @@ with pkgs;
 [
   discord
   slack
+
   flameshot
   pavucontrol
   vlc

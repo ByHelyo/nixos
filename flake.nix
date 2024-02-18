@@ -6,34 +6,27 @@
 
     home-manager = {
       url = "github:nix-community/home-manager";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
+    fenix = {
+      url = "github:nix-community/fenix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
-  outputs = { self, nixpkgs, home-manager }:
+  outputs = { self, nixpkgs, home-manager, fenix }@inputs:
     {
       nixosConfigurations =
-        let
-          defaultModules = [
-            home-manager.nixosModules.home-manager
-            {
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.helyo = import ./home-manager/homes/ideapad.nix;
-            }
-          ];
-        in
-
         {
           "ideapad" = nixpkgs.lib.nixosSystem {
             system = "x86_64-linux";
 
+            specialArgs = { inherit inputs; };
             modules = [
               ./hosts/ideapad
-            ] ++ defaultModules;
+            ];
           };
         };
     };
 }
-
