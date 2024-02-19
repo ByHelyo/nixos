@@ -1,4 +1,4 @@
-{ config }:
+{ settings }:
 
 {
   type = "internal/battery";
@@ -7,8 +7,8 @@
 
   low-at = 5;
 
-  battery = config.battery.battery_name;
-  adapter = config.battery.battery_adapter;
+  battery = settings.battery.battery_name;
+  adapter = settings.battery.battery_adapter;
 
   poll-interval = 5;
 }

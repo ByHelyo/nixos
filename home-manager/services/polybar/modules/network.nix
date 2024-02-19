@@ -1,8 +1,8 @@
-{ color, config }:
+{ color, settings }:
 
 {
   type = "internal/network";
-  interface = config.network.wireless;
+  interface = settings.network.wireless;
 
   interval = "15.0";
 

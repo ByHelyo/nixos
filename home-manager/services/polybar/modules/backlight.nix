@@ -1,8 +1,8 @@
-{ color, config }:
+{ color, settings }:
 
 {
   type = "internal/backlight";
-  card = config.backlight.card;
+  card = settings.backlight.card;
 
   enable-scroll = true;
 

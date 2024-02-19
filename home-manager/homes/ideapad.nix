@@ -1,5 +1,9 @@
 { inputs, pkgs, lib, ... }:
 
+let
+  polybarSettings = import ../services/polybar/settings/ideapad.nix;
+in
+
 {
   imports = [
     ../i3
@@ -43,7 +47,7 @@
   };
 
   services = {
-    polybar = import ../services/polybar { inherit pkgs; };
+    polybar = import ../services/polybar { inherit pkgs; settings = polybarSettings; };
   };
 
   home.stateVersion = "24.05";

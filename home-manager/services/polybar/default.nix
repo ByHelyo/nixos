@@ -1,4 +1,4 @@
-{ pkgs }:
+{ pkgs, settings }:
 
 let
   color = {
@@ -10,8 +10,6 @@ let
     alert = "#A54242";
     disabled = "#707880";
   };
-
-  config = import ./settings.nix;
 in
 
 {
@@ -59,12 +57,12 @@ in
     "module/xworkspaces" = import ./modules/xworkspaces.nix { inherit color; };
     "module/xwindow" = import ./modules/xwindow.nix { inherit color; };
     "module/xkeyboard" = import ./modules/xkeyboard.nix { inherit color; };
-    "module/network" = import ./modules/network.nix { inherit color config; };
+    "module/network" = import ./modules/network.nix { inherit color settings; };
     "module/pulseaudio" = import ./modules/pulseaudio.nix { inherit color; };
-    "module/battery" = import ./modules/battery.nix { inherit config; };
+    "module/battery" = import ./modules/battery.nix { inherit settings; };
     "module/date" = import ./modules/date.nix { inherit color; };
     "module/cpu" = import ./modules/cpu.nix { inherit color; };
     "module/memory" = import ./modules/memory.nix { inherit color; };
-    "module/backlight" = import ./modules/backlight.nix { inherit color config; };
+    "module/backlight" = import ./modules/backlight.nix { inherit color settings; };
   };
 }
