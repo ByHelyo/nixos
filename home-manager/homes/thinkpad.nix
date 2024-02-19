@@ -1,7 +1,7 @@
 { inputs, pkgs, lib, ... }:
 
 let
-  polybarSettings = import ../services/polybar/settings/ideapad.nix;
+  polybarSettings = import ../services/polybar/settings/thinkpad.nix;
 in
 
 {
@@ -26,7 +26,10 @@ in
 
     packages = with pkgs; [ ]
       ++ (import ../pkgs/cli.nix { inherit pkgs; })
+      ++ (import ../pkgs/ide.nix { inherit pkgs; })
+      ++ (import ../pkgs/java.nix { inherit pkgs; })
       ++ (import ../pkgs/js.nix { inherit pkgs; })
+      ++ (import ../pkgs/media.nix { inherit pkgs; })
       ++ (import ../pkgs/misc.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
