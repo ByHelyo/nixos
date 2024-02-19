@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ../hypr
+    ../i3
     ../fonts.nix
   ];
 
@@ -44,11 +44,6 @@
 
   services = {
     polybar = import ../services/polybar { inherit pkgs; };
-  };
-
-  xsession = {
-    enable = true;
-    windowManager.i3 = import ../i3 { inherit pkgs lib; };
   };
 
   home.stateVersion = "24.05";

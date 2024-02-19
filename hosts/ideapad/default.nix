@@ -7,6 +7,7 @@
     ../common/configuration.nix
     ../common/location.nix
     ../common/hardware.nix
+    ../common/xserver.nix
   ];
 
   home-manager = {

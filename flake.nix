@@ -13,11 +13,9 @@
       url = "github:nix-community/fenix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-
-    hyprland.url = "github:hyprwm/Hyprland";
   };
 
-  outputs = { self, nixpkgs, home-manager, hyprland, fenix }@inputs:
+  outputs = { self, nixpkgs, home-manager, fenix }@inputs:
     {
       nixosConfigurations =
         {
@@ -26,8 +24,6 @@
 
             specialArgs = { inherit inputs; };
             modules = [
-              hyprland.nixosModules.default
-
               ./hosts/ideapad
             ];
           };
