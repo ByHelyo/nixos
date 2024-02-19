@@ -7,7 +7,6 @@
     ../common/configuration.nix
     ../common/location.nix
     ../common/hardware.nix
-    ../common/displayserver.nix
   ];
 
   home-manager = {
