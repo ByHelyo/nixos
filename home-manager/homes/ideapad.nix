@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ../hypr
     ../fonts.nix
   ];
 
