@@ -1,6 +1,5 @@
 { pkgs, ... }:
 
-with pkgs;
 {
   fonts.fontconfig.enable = true;
 
