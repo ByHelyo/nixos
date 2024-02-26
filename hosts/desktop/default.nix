@@ -7,7 +7,8 @@
     ../common/configuration.nix
     ../common/location.nix
     ../common/hardware.nix
-    ../common/xserver.nix
+    ../common/xserver
+    ../common/xserver/kde
     ../common/nvidia.nix
   ];
 

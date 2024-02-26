@@ -1,12 +1,7 @@
 { inputs, pkgs, lib, ... }:
 
-let
-  polybarSettings = import ../services/polybar/settings/desktop.nix;
-in
-
 {
   imports = [
-    ../i3
     ../fonts.nix
   ];
 
@@ -39,15 +34,10 @@ in
     home-manager.enable = true;
 
     alacritty = import ../programs/alacritty { inherit pkgs; };
-    rofi = import ../programs/rofi { inherit pkgs; };
     git = import ../programs/git;
     fish = import ../programs/fish { inherit pkgs; };
     neovim = import ../programs/neovim { inherit pkgs lib; };
     starship = import ../programs/starship;
-  };
-
-  services = {
-    polybar = import ../services/polybar { inherit pkgs; settings = polybarSettings; };
   };
 
   home.stateVersion = "24.05";
