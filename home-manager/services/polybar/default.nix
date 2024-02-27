@@ -44,8 +44,8 @@ in
 
       font-0 = "JetBrainsMono Nerd Font Mono:pixelsize=13;2";
 
-      modules-left = "xworkspaces xwindow";
-      modules-right = "xkeyboard pulseaudio backlight memory cpu network battery date";
+      modules-left = "xworkspaces";
+      modules-right = "xkeyboard pulseaudio backlight memory cpu network battery date tray";
 
       enable-ipc = true;
     };
@@ -64,5 +64,6 @@ in
     "module/cpu" = import ./modules/cpu.nix { inherit color; };
     "module/memory" = import ./modules/memory.nix { inherit color; };
     "module/backlight" = import ./modules/backlight.nix { inherit color settings; };
+    "module/tray" = import ./modules/tray.nix;
   };
 }
