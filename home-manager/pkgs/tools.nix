@@ -4,13 +4,12 @@ with pkgs;
 [
   discord
   slack
+  telegram-desktop
 
   flameshot
   pavucontrol
-  vlc
   gpick
   cinnamon.nemo
-  insomnia
 
   google-chrome
   chromium
