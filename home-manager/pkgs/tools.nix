@@ -4,7 +4,6 @@ with pkgs;
 [
   discord
   slack
-  telegram-desktop
 
   flameshot
   pavucontrol
