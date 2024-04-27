@@ -1,6 +1,6 @@
 {
   backlight = {
-    card = "amdgpu_bl0";
+    card = "amdgpu_bl1";
   };
   battery = {
     battery_name = "BAT1";
