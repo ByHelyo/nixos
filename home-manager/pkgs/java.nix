@@ -2,6 +2,6 @@
 
 with pkgs;
 [
-  jdk
+  jdk21
   maven
 ]
