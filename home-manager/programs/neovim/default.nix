@@ -47,7 +47,6 @@ in
 
   extraPackages = with pkgs; [
     terraform-ls
-    rnix-lsp
     tailwindcss-language-server
     ccls
   ] ++ (with nodePackages; [
