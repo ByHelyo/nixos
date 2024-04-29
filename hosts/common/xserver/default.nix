@@ -1,11 +1,13 @@
 { ... }:
 
 {
-  services.xserver = {
-    enable = true;
-    xkb = {
-      variant = "intl";
-      layout = "us";
+  services = {
+    xserver = {
+      enable = true;
+      xkb = {
+        variant = "intl";
+        layout = "us";
+      };
     };
     libinput.enable = true;
   };
