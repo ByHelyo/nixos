@@ -13,9 +13,10 @@
     cb = "checkout -b";
     di = "diff";
     l = "log";
-    br = "branch";
     lo = "log --oneline --graph --decorate";
     hist = "log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short";
+    rt = "remote -v";
+    br = "branch -vv";
   };
 
   extraConfig = {
