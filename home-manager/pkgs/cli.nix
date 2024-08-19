@@ -14,4 +14,5 @@ with pkgs;
   neofetch
   terraform
   kubectl
+  gnumake
 ]
