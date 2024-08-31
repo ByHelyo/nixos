@@ -47,6 +47,7 @@ in
     fish = import ../programs/fish { inherit pkgs; };
     neovim = import ../programs/neovim { inherit pkgs lib; };
     starship = import ../programs/starship;
+    vscode = import ../programs/vscode { inherit pkgs; };
   };
 
   services = {
