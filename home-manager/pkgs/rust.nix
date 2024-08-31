@@ -10,4 +10,5 @@ with pkgs;
     "rustfmt"
   ])
   rust-analyzer-nightly
+  gcc
 ]
