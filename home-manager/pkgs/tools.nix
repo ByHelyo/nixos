@@ -8,7 +8,7 @@ with pkgs;
   flameshot
   pavucontrol
   gpick
-  cinnamon.nemo
+  nemo
 
   google-chrome
   chromium

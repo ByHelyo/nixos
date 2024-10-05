@@ -12,7 +12,6 @@ with pkgs;
   git
   docker-compose
   neofetch
-  terraform
   kubectl
   gnumake
 ]

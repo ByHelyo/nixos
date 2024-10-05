@@ -24,7 +24,7 @@ in
     username = "helyo";
     homeDirectory = "/home/helyo";
 
-    packages = with pkgs; [ zoom-us ]
+    packages = with pkgs; [ ]
       ++ (import ../pkgs/cli.nix { inherit pkgs; })
       ++ (import ../pkgs/js.nix { inherit pkgs; })
       ++ (import ../pkgs/misc.nix { inherit pkgs; })

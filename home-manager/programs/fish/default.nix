@@ -16,12 +16,6 @@
     rm = "rm -vd";
     mkdir = "mkdir -pv";
     dc = "${pkgs.docker-compose}/bin/docker-compose";
-    tf = "${pkgs.terraform}/bin/terraform";
-  };
-
-  shellAbbrs = {
-    clion = "${pkgs.jetbrains.clion}/bin/clion > /dev/null 2>&1 &";
-    idea = "${pkgs.jetbrains.idea-ultimate}/bin/idea-ultimate > /dev/null 2>&1 &";
-    cclscmake = "cmake -H. -BDebug -DCMAKE_BUILD_TYPE=Debug -DCMAKE_EXPORT_COMPILE_COMMANDS=YES ; ln -s Debug/compile_commands.json .";
+    tf = "terraform";
   };
 }
