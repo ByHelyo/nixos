@@ -26,11 +26,11 @@ in
   vimAlias = true;
 
   extraLuaConfig = lib.concatStrings [
+    (builtins.readFile ./config/plugins/solarized-osaka.lua)
     (builtins.readFile ./config/options.lua)
     (builtins.readFile ./config/keymaps.lua)
     (builtins.readFile ./config/autocmds.lua)
     (builtins.readFile ./config/plugins/neo-tree.lua)
-    (builtins.readFile ./config/plugins/solarized-osaka.lua)
     (builtins.readFile ./config/plugins/nvim-treesitter.lua)
     (builtins.readFile ./config/plugins/git-signs.lua)
     (builtins.readFile ./config/plugins/vim-illuminate.lua)

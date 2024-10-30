@@ -52,6 +52,7 @@ in
 
   services = {
     polybar = import ../services/polybar { inherit pkgs; settings = polybarSettings; };
+    picom = import ../services/picom;
   };
 
   home.stateVersion = "24.05";
