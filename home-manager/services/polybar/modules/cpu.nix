@@ -3,10 +3,13 @@
 {
   type = "internal/cpu";
 
-  interval = "10.0";
+  internal = 5;
 
+  format = "<label>";
   format-prefix = "CPU ";
-  format-prefix-foreground = color.primary;
+  format-background = color.shades."5";
+  format-foreground = color.foreground;
+  format-padding = 2;
 
-  label = "%percentage:2%%";
+  label = " %percentage%%";
 }

@@ -6,8 +6,11 @@
 
   enable-scroll = true;
 
+  format = "<label>";
   format-prefix = "LGT ";
-  format-prefix-foreground = color.primary;
+  format-background = color.shades."7";
+  format-foreground = color.foreground;
+  format-padding = 2;
 
   label = "%percentage%%";
 }

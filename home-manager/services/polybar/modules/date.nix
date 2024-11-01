@@ -2,11 +2,18 @@
 
 {
   type = "internal/date";
-  interval = "10.0";
 
-  date = "%I:%M %p, %d/%m/%Y";
-  date-alt = "%I:%M %p, %A, %d %B %Y";
+  internal = 15;
 
-  label = "%date%";
-  label-foreground = color.primary;
+  time = " %I:%M %p";
+  time-alt = " %a, %d %b %Y";
+
+  format = "<label>";
+  format-prefix = " ";
+  format-font = 2;
+  format-background = color.shades."3";
+  format-foreground = color.foreground;
+  format-padding = 2;
+
+  label = "%time%";
 }

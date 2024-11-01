@@ -6,11 +6,14 @@
   blacklist-0 = "num lock";
   blacklist-1 = "scroll lock";
 
-  label-layout = "%layout%";
-  label-layout-foreground = color.primary;
+  format = "<label-layout> <label-indicator>";
+  format-prefix = " ";
+  format-prefix-font = 2;
+  format-background = color.shades."7";
+  format-padding = 1;
 
-  label-indicator-padding = 2;
-  label-indicator-margin = 1;
-  label-indicator-foreground = color.background;
-  label-indicator-background = color.secondary;
+  label-layout = " %layout%";
+
+  label-indicator-on = "%name%";
+  label-indicator-on-foreground = color.foreground;
 }

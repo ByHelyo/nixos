@@ -4,14 +4,23 @@
   type = "internal/network";
   interface = settings.network.wireless;
 
-  interval = "15.0";
+  interval = 15;
 
   unknown-as-up = true;
 
   format-connected = "<label-connected>";
-  format-disconnected = "<label-disconnected>";
+  format-connected-prefix = " ";
+  format-connected-prefix-font = 2;
+  format-connected-background = color.shades."6";
+  format-connected-padding = 2;
 
-  label-connected = "%{F#FF5F1F}%ifname%%{F-} %essid% %local_ip%";
-  label-disconnected = "%{F#FF5F1F}%ifname%%{F#707880} disconnected";
+  format-disconnected = "<label-disconnected>";
+  format-disconnected-prefix = "ﲁ";
+  format-disconnected-prefix-font = 2;
+  format-disconnected-background = color.shades."6";
+  format-disconnected-padding = 2;
+
+  label-connected = "%{A1:networkmanager_dmenu &:} %essid%%{A}";
+  label-disconnected = "%{A1:networkmanager_dmenu &:} Offline%{A}";
 }
 

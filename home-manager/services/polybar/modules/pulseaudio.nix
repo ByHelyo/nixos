@@ -5,12 +5,25 @@
 
   interval = 5;
 
-  format-volume-prefix = "VOL ";
-  format-volume-prefix-foreground = color.primary;
-  format-volume = "<label-volume>";
+  format-volume = "<ramp-volume> <label-volume>";
+  format-volume-background = color.shades."5";
+  format-volume-padding = 2;
+
+  format-muted = "<label-muted>";
+  format-muted-prefix = " ";
+  format-muted-prefix-font = 2;
+  format-muted-background = color.shades."5";
+  format-muted-padding = 2;
 
   label-volume = "%percentage%%";
 
-  label-muted = "MUTED";
-  label-muted-foreground = color.disabled;
+  label-muted = " Muted";
+  label-muted-foreground = color.foreground;
+
+  ramp-volume-0 = " ";
+  ramp-volume-1 = " ";
+  ramp-volume-2 = " ";
+  ramp-volume-font = 2;
+
+  ramp-headphones-0 = " ";
 }
