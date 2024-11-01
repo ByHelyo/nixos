@@ -1,9 +1,5 @@
 require("solarized-osaka").setup({
-  transparent = true,
-  styles = {
-    sidebars = "transparent",
-    floats = "transparent",
-  },
+  transparent = false,
 })
 
 vim.cmd([[colorscheme solarized-osaka]])
