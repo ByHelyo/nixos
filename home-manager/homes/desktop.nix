@@ -2,6 +2,7 @@
 
 {
   imports = [
+    ../kde
     ../fonts.nix
   ];
 
