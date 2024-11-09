@@ -4,11 +4,11 @@
   imports = [
     inputs.home-manager.nixosModules.home-manager
     ./hardware-configuration.nix
-    ../common/configuration.nix
-    ../common/location.nix
-    ../common/hardware.nix
-    ../common/xserver
-    ../common/xserver/i3
+    ../module/configuration.nix
+    ../module/location.nix
+    ../module/core.nix
+    ../module/xserver
+    ../module/xserver/i3
   ];
 
   home-manager = {
@@ -18,8 +18,8 @@
     };
   };
 
-  virtualisation = import ../common/virtualisation.nix;
-  users.users.helyo = import ../common/users/helyo.nix;
+  virtualisation = import ../module/virtualisation.nix;
+  users.users.helyo = import ../module/users/helyo.nix;
 
   networking.hostName = "ideapad";
 }

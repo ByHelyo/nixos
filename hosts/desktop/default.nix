@@ -4,12 +4,13 @@
   imports = [
     inputs.home-manager.nixosModules.home-manager
     ./hardware-configuration.nix
-    ../common/configuration.nix
-    ../common/location.nix
-    ../common/hardware.nix
-    ../common/xserver
-    ../common/xserver/kde
-    ../common/nvidia.nix
+    ../module/configuration.nix
+    ../module/location.nix
+    ../module/core.nix
+    ../module/xserver
+    ../module/xserver/kde
+    ../module/hardware/nvidia.nix
+    ../module/hardware/razer.nix
   ];
 
   home-manager = {
@@ -19,8 +20,8 @@
     };
   };
 
-  virtualisation = import ../common/virtualisation.nix;
-  users.users.helyo = import ../common/users/helyo.nix;
+  virtualisation = import ../module/virtualisation.nix;
+  users.users.helyo = import ../module/users/helyo.nix;
 
   boot.loader.efi.efiSysMountPoint = "/boot/efi";
 
