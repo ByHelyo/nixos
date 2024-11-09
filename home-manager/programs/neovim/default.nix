@@ -6,7 +6,7 @@ let
     src = pkgs.fetchFromGitHub {
       owner = "craftzdog";
       repo = "solarized-osaka.nvim";
-      rev = "92c5def2b522e7869b29b55b448544f226e07524";
+      rev = "126d394c0c979a99206214a2b6b8c86e456c9c0f";
       sha256 = "sha256-t7q+Zxd/D8Kl95YsQghBkeysIubhzFMonYqq7jUAYLE=";
     };
   };
@@ -15,7 +15,7 @@ let
     src = pkgs.fetchFromGitHub {
       owner = "echasnovski";
       repo = "mini.indentscope";
-      rev = "a8274b6ea2d868198d27bd91a31ed5ea3a6a5744";
+      rev = "da9af64649e114aa79480c238fd23f6524bc0903";
       sha256 = "sha256-kD1nN0EtQzZu8y/giee50uC1H9kp7+2HKvLAlHWXSzM=";
     };
   };
