@@ -25,7 +25,7 @@
       size = 7.0;
     };
 
-    shell = {
+    terminal.shell = {
       program = "${pkgs.fish}/bin/fish";
       args = [ "--init-command" "echo; neofetch; echo" ];
     };

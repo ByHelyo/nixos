@@ -7,7 +7,7 @@ let
       owner = "craftzdog";
       repo = "solarized-osaka.nvim";
       rev = "126d394c0c979a99206214a2b6b8c86e456c9c0f";
-      sha256 = "sha256-t7q+Zxd/D8Kl95YsQghBkeysIubhzFMonYqq7jUAYLE=";
+      sha256 = "sha256-uDSfLbXqKRSE2dLNVB1uQ5Grv4tPSzppQiR1t01UI+o=";
     };
   };
   mini-indentscope = pkgs.vimUtils.buildVimPlugin {
@@ -16,7 +16,7 @@ let
       owner = "echasnovski";
       repo = "mini.indentscope";
       rev = "da9af64649e114aa79480c238fd23f6524bc0903";
-      sha256 = "sha256-kD1nN0EtQzZu8y/giee50uC1H9kp7+2HKvLAlHWXSzM=";
+      sha256 = "sha256-zzD+RFSA9YHNWJO1030G7k6vCI0X0l3ra2vGhAmLcN0=";
     };
   };
 in
