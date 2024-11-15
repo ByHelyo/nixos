@@ -31,6 +31,7 @@ in
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
       ++ (import ../pkgs/tools.nix { inherit pkgs; })
+      ++ (import ../pkgs/obsidian.nix { inherit pkgs; })
     ;
   };
 
