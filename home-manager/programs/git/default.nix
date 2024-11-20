@@ -1,7 +1,7 @@
 {
   enable = true;
 
-  userName = "Franck Hu";
+  userName = "Helyo";
   userEmail = "byhelyo@gmail.com";
   aliases = {
     st = "status";
