@@ -3,6 +3,7 @@
 with pkgs;
 [
   ripgrep
+  duf
   eza
   fd
   unzip
