@@ -1,5 +1,5 @@
 {
   isNormalUser = true;
-  description = "Franck Hu";
+  description = "Helyo";
   extraGroups = [ "networkmanager" "wheel" ];
 } 
