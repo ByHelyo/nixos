@@ -27,15 +27,11 @@ in
     packages = with pkgs; [ ]
       ++ (import ../pkgs/cli.nix { inherit pkgs; })
       ++ (import ../pkgs/ide.nix { inherit pkgs; })
-      ++ (import ../pkgs/java.nix { inherit pkgs; })
       ++ (import ../pkgs/js.nix { inherit pkgs; })
-      ++ (import ../pkgs/media.nix { inherit pkgs; })
       ++ (import ../pkgs/misc.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
       ++ (import ../pkgs/tools.nix { inherit pkgs; })
-      ++ (import ../pkgs/tools-dev.nix { inherit pkgs; })
-      ++ (import ../pkgs/obsidian.nix { inherit pkgs; })
     ;
   };
 

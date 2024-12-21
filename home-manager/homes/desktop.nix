@@ -23,7 +23,6 @@
     packages = with pkgs; [ ]
       ++ (import ../pkgs/cli.nix { inherit pkgs; })
       ++ (import ../pkgs/js.nix { inherit pkgs; })
-      ++ (import ../pkgs/media.nix { inherit pkgs; })
       ++ (import ../pkgs/misc.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
