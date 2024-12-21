@@ -1,4 +1,4 @@
-{ inputs, pkgs, lib, ... }:
+{ inputs, pkgs, lib, config, ... }:
 
 let
   polybarSettings = import ../services/polybar/settings/thinkpad.nix;
@@ -8,6 +8,7 @@ in
   imports = [
     ../i3
     ../fonts.nix
+    ../options.nix
   ];
 
   nixpkgs = {
@@ -31,7 +32,7 @@ in
       ++ (import ../pkgs/misc.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
-      ++ (import ../pkgs/tools.nix { inherit pkgs; })
+      ++ (import ../pkgs/tools.nix { inherit pkgs lib config; })
     ;
   };
 
@@ -44,12 +45,20 @@ in
     fish = import ../programs/fish { inherit pkgs; };
     neovim = import ../programs/neovim { inherit pkgs lib; };
     starship = import ../programs/starship;
-    vscode = import ../programs/vscode { inherit pkgs; };
   };
 
   services = {
     polybar = import ../services/polybar { inherit pkgs; settings = polybarSettings; };
     picom = import ../services/picom;
+  };
+
+  opts = {
+    pkgs = {
+      obs = true;
+      obsidian = true;
+      krita = true;
+      insomnia = true;
+    };
   };
 
   home.stateVersion = "24.05";

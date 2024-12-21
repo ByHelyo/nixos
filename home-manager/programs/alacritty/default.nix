@@ -11,18 +11,18 @@
 
     font = {
       normal = {
-        family = "JetBrainsMono Nerd Font Mono";
+        family = "Hack Nerd Font Mono";
         style = "Regular";
       };
       bold = {
-        family = "JetBrainsMono Nerd Font Mono";
+        family = "Iosevka Nerd Font Mono";
         style = "Bold";
       };
       italic = {
-        family = "JetBrainsMono Nerd Font Mono";
+        family = "Iosevka Nerd Font Mono";
         style = "Italic";
       };
-      size = 7.0;
+      size = 10.0;
     };
 
     terminal.shell = {
