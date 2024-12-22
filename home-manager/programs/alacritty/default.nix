@@ -15,11 +15,11 @@
         style = "Regular";
       };
       bold = {
-        family = "Iosevka Nerd Font Mono";
+        family = "Hack Nerd Font Mono";
         style = "Bold";
       };
       italic = {
-        family = "Iosevka Nerd Font Mono";
+        family = "Hack Nerd Font Mono";
         style = "Italic";
       };
       size = 10.0;

@@ -37,6 +37,7 @@
     fish = import ../programs/fish { inherit pkgs; };
     starship = import ../programs/starship;
     neovim = import ../programs/neovim { inherit pkgs lib; };
+    vscode = import ../programs/vscode { inherit pkgs; };
   };
 
   home.stateVersion = "24.05";
