@@ -4,6 +4,7 @@
   imports = [
     ../kde
     ../fonts.nix
+    ../modules/astronvim.nix
   ];
 
   nixpkgs = {
@@ -23,7 +24,6 @@
     packages = with pkgs; [ ]
       ++ (import ../pkgs/cli.nix { inherit pkgs; })
       ++ (import ../pkgs/js.nix { inherit pkgs; })
-      ++ (import ../pkgs/misc.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
       ++ (import ../pkgs/tools.nix { inherit pkgs; })
@@ -36,7 +36,6 @@
     alacritty = import ../programs/alacritty { inherit pkgs; };
     git = import ../programs/git;
     fish = import ../programs/fish { inherit pkgs; };
-    neovim = import ../programs/neovim { inherit pkgs lib; };
     starship = import ../programs/starship;
   };
 

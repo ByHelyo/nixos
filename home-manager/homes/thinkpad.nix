@@ -9,6 +9,7 @@ in
     ../i3
     ../fonts.nix
     ../options.nix
+    ../modules/astronvim.nix
   ];
 
   nixpkgs = {
@@ -29,7 +30,6 @@ in
       ++ (import ../pkgs/cli.nix { inherit pkgs; })
       ++ (import ../pkgs/ide.nix { inherit pkgs; })
       ++ (import ../pkgs/js.nix { inherit pkgs; })
-      ++ (import ../pkgs/misc.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
       ++ (import ../pkgs/tools.nix { inherit pkgs lib config; })
@@ -43,7 +43,6 @@ in
     rofi = import ../programs/rofi { inherit pkgs; };
     git = import ../programs/git;
     fish = import ../programs/fish { inherit pkgs; };
-    neovim = import ../programs/neovim { inherit pkgs lib; };
     starship = import ../programs/starship;
   };
 

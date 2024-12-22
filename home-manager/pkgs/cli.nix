@@ -15,4 +15,5 @@ with pkgs;
   neofetch
   kubectl
   gnumake
+  brightnessctl
 ]
