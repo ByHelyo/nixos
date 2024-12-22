@@ -6,7 +6,7 @@
   settings = {
     window = {
       title = "Alacritty";
-      opacity = 0.7;
+      opacity = 1;
     };
 
     font = {
@@ -25,40 +25,90 @@
       size = 10.0;
     };
 
-    terminal.shell = {
-      program = "${pkgs.fish}/bin/fish";
-      args = [ "--init-command" "echo; neofetch; echo" ];
+    terminal = {
+      shell = {
+        program = "${pkgs.fish}/bin/fish";
+        args = [ "--init-command" "echo; neofetch; echo" ];
+      };
     };
 
     colors = {
       primary = {
-        background = "0x000000";
-        foreground = "0xEBEBEB";
+        background = "#1e1e2e";
+        foreground = "#cdd6f4";
+        dim_foreground = "#7f849c";
+        bright_foreground = "#cdd6f4";
       };
+
       cursor = {
-        text = "0xFF261E";
-        cursor = "0xFF261E";
+        text = "#1e1e2e";
+        cursor = "#f5e0dc";
       };
+
+      vi_mode_cursor = {
+        text = "#1e1e2e";
+        cursor = "#b4befe";
+      };
+
+      search = {
+        matches = {
+          foreground = "#1e1e2e";
+          background = "#a6adc8";
+        };
+        focused_match = {
+          foreground = "#1e1e2e";
+          background = "#a6e3a1";
+        };
+      };
+
+      footer_bar = {
+        foreground = "#1e1e2e";
+        background = "#a6adc8";
+      };
+
+      hints = {
+        start = {
+          foreground = "#1e1e2e";
+          background = "#f9e2af";
+        };
+        end = {
+          foreground = "#1e1e2e";
+          background = "#a6adc8";
+        };
+      };
+
+      selection = {
+        text = "#1e1e2e";
+        background = "#f5e0dc";
+      };
+
       normal = {
-        black = "0x0D0D0D";
-        red = "0xFF301B";
-        green = "0xA0E521";
-        yellow = "0xFFC620";
-        blue = "0x1BA6FA";
-        magenta = "0x8763B8";
-        cyan = "0x21DEEF";
-        white = "0xEBEBEB";
+        black = "#45475a";
+        red = "#f38ba8";
+        green = "#a6e3a1";
+        yellow = "#f9e2af";
+        blue = "#89b4fa";
+        magenta = "#f5c2e7";
+        cyan = "#94e2d5";
+        white = "#bac2de";
       };
+
       bright = {
-        black = "0x6D7070";
-        red = "0xFF4352";
-        green = "0xB8E466";
-        yellow = "0xFFD750";
-        blue = "0x1BA6FA";
-        magenta = "0xA578EA";
-        cyan = "0x73FBF1";
-        white = "0xFEFEF8";
+        black = "#585b70";
+        red = "#f38ba8";
+        green = "#a6e3a1";
+        yellow = "#f9e2af";
+        blue = "#89b4fa";
+        magenta = "#f5c2e7";
+        cyan = "#94e2d5";
+        white = "#a6adc8";
       };
+
+      indexed_colors = [
+        { index = 16; color = "#fab387"; }
+        { index = 17; color = "#f5e0dc"; }
+      ];
     };
   };
 }
+
