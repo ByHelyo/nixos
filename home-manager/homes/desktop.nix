@@ -4,7 +4,6 @@
   imports = [
     ../kde
     ../fonts.nix
-    ../modules/astronvim.nix
   ];
 
   nixpkgs = {
@@ -37,6 +36,7 @@
     git = import ../programs/git;
     fish = import ../programs/fish { inherit pkgs; };
     starship = import ../programs/starship;
+    neovim = import ../programs/neovim { inherit pkgs lib; };
   };
 
   home.stateVersion = "24.05";

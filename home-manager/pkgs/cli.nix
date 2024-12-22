@@ -16,4 +16,5 @@ with pkgs;
   kubectl
   gnumake
   brightnessctl
+  xclip
 ]

@@ -3,8 +3,10 @@ vim.g.maplocalleader = "\\"
 
 local opt = vim.opt
 
+opt.autowrite = true -- Enable autowrite
 opt.swapfile = false -- No swap file
 opt.clipboard = "unnamedplus" -- Sync with system clipboard
+opt.completeopt = "menu,menuone,noselect"
 opt.confirm = true -- Confirm to save changes before exiting modified buffer
 opt.expandtab = true -- Use spaces instead of tabs
 opt.ignorecase = true -- Ignore case

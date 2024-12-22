@@ -1,15 +1,6 @@
 { pkgs, lib }:
 
 let
-  solarized-osaka-nvim = pkgs.vimUtils.buildVimPlugin {
-    name = "solarized-osaka.nvim";
-    src = pkgs.fetchFromGitHub {
-      owner = "craftzdog";
-      repo = "solarized-osaka.nvim";
-      rev = "126d394c0c979a99206214a2b6b8c86e456c9c0f";
-      sha256 = "sha256-uDSfLbXqKRSE2dLNVB1uQ5Grv4tPSzppQiR1t01UI+o=";
-    };
-  };
   mini-indentscope = pkgs.vimUtils.buildVimPlugin {
     name = "mini.indentscope";
     src = pkgs.fetchFromGitHub {
@@ -26,7 +17,7 @@ in
   vimAlias = true;
 
   extraLuaConfig = lib.concatStrings [
-    (builtins.readFile ./config/plugins/solarized-osaka.lua)
+    (builtins.readFile ./config/plugins/catppuccin.lua)
     (builtins.readFile ./config/options.lua)
     (builtins.readFile ./config/keymaps.lua)
     (builtins.readFile ./config/autocmds.lua)
@@ -55,7 +46,8 @@ in
 
   plugins = with pkgs.vimPlugins; [
     neo-tree-nvim
-    solarized-osaka-nvim
+    tokyonight-nvim
+    catppuccin-nvim
     gitsigns-nvim
     vim-illuminate
     nvim-treesitter.withAllGrammars
