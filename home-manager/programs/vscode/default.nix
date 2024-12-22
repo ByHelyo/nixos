@@ -7,6 +7,8 @@
     rust-lang.rust-analyzer
     vscodevim.vim
     eamodio.gitlens
+    usernamehw.errorlens
+    github.copilot
     catppuccin.catppuccin-vsc-icons
     catppuccin.catppuccin-vsc
   ];
