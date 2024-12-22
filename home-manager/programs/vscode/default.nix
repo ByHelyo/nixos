@@ -15,6 +15,6 @@
     "workbench.colorTheme" = "Catppuccin Mocha";
     "workbench.iconTheme" = "catppuccin-mocha";
     "editor.minimap.enabled" = false;
-    "editor.fontFamily" = "'MonaspiceKr Nerd Font', 'monospace', monospace";
+    "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'MonaspiceNe Nerd Font', 'monospace', monospace";
   };
 }
