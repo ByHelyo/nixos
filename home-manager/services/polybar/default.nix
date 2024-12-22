@@ -67,8 +67,8 @@ in
 
       module-margin = 0;
 
-      font-0 = "Hack Nerd Font:pixelsize=10;3";
-      font-1 = "Hack Nerd Font:style=Medium:size=13;3.9";
+      font-0 = "Iosevka Nerd Font:pixelsize=10;3";
+      font-1 = "Iosevka Nerd Font:style=Medium:size=13;3.9";
 
       modules-left = "i3";
       modules-right = "xkeyboard pulseaudio backlight memory cpu network battery date tray";
