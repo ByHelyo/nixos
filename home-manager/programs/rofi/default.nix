@@ -12,9 +12,9 @@
 
   theme = builtins.toString (pkgs.writeText "rofi-theme" ''
     * {
-      bg0:    #242424E6;
+      bg0:    #1E1E2EE6;
       bg1:    #7E7E7E80;
-      bg2:    #0860f2E6;
+      bg2:    #89B4FAE6;
 
       fg0:    #DEDEDE;
       fg1:    #FFFFFF;
