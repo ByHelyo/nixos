@@ -27,11 +27,11 @@ in
 
     packages = with pkgs; [ ]
       ++ (import ../pkgs/cli.nix { inherit pkgs; })
-      ++ (import ../pkgs/ide.nix { inherit pkgs; })
+      ++ (import ../pkgs/editor.nix { inherit pkgs config lib; })
       ++ (import ../pkgs/js.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
-      ++ (import ../pkgs/tools.nix { inherit pkgs lib config; })
+      ++ (import ../pkgs/tools.nix { inherit pkgs config lib; })
     ;
   };
 
@@ -58,6 +58,7 @@ in
       obsidian = true;
       krita = true;
       insomnia = true;
+      cursor = true;
     };
   };
 

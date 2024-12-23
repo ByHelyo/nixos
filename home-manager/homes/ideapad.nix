@@ -30,7 +30,7 @@ in
       ++ (import ../pkgs/js.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
-      ++ (import ../pkgs/tools.nix { inherit pkgs lib config; })
+      ++ (import ../pkgs/tools.nix { inherit pkgs config lib; })
     ;
   };
 
