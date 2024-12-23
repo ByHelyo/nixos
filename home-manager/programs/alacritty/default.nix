@@ -11,15 +11,15 @@
 
     font = {
       normal = {
-        family = "Hack Nerd Font Mono";
+        family = "MonaspiceNe Nerd Font";
         style = "Regular";
       };
       bold = {
-        family = "Hack Nerd Font Mono";
+        family = "MonaspiceNe Nerd Font";
         style = "Bold";
       };
       italic = {
-        family = "Hack Nerd Font Mono";
+        family = "MonaspiceNe Nerd Font";
         style = "Italic";
       };
       size = 10.0;

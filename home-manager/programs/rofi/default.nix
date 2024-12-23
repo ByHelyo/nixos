@@ -8,7 +8,7 @@
 
 {
   enable = true;
-  font = "Hack Nerd Font Mono 18";
+  font = "MonaspiceNe Nerd Font 18";
 
   theme = builtins.toString (pkgs.writeText "rofi-theme" ''
     * {
@@ -38,7 +38,7 @@
     }
 
     inputbar {
-       font:       "Hack Nerd Font Mono 24";
+       font:       "MonaspiceNe Nerd Font 24";
        padding:    12px;
        spacing:    12px;
        children:   [ icon-search, entry ];
