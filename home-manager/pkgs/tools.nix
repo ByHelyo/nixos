@@ -7,7 +7,6 @@ with pkgs;
 
   flameshot
   pavucontrol
-  gpick
   nemo
 
   google-chrome

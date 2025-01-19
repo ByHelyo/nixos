@@ -9,6 +9,7 @@ in
     ../i3
     ../fonts.nix
     ../options.nix
+    ../astronvim
   ];
 
   nixpkgs = {
@@ -43,7 +44,6 @@ in
     git = import ../programs/git;
     fish = import ../programs/fish { inherit pkgs; };
     starship = import ../programs/starship;
-    neovim = import ../programs/neovim { inherit pkgs lib; };
     vscode = import ../programs/vscode { inherit pkgs; };
   };
 
@@ -58,7 +58,6 @@ in
       obsidian = true;
       krita = true;
       insomnia = true;
-      cursor = true;
     };
   };
 
