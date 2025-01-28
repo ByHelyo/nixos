@@ -58,6 +58,7 @@ in
       obsidian = true;
       krita = true;
       insomnia = true;
+      cursor = true;
     };
   };
 
