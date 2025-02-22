@@ -1,9 +1,11 @@
-{ inputs, pkgs, lib, ... }:
+{ inputs, pkgs, lib, config, ... }:
 
 {
   imports = [
+    ../astronvim
     ../kde
     ../fonts.nix
+    ../options.nix
   ];
 
   nixpkgs = {
@@ -25,7 +27,7 @@
       ++ (import ../pkgs/js.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
-      ++ (import ../pkgs/tools.nix { inherit pkgs; })
+      ++ (import ../pkgs/tools.nix { inherit pkgs config lib; })
     ;
   };
 
@@ -36,7 +38,6 @@
     git = import ../programs/git;
     fish = import ../programs/fish { inherit pkgs; };
     starship = import ../programs/starship;
-    neovim = import ../programs/neovim { inherit pkgs lib; };
     vscode = import ../programs/vscode { inherit pkgs; };
   };
 

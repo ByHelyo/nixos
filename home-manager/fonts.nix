@@ -1,10 +1,10 @@
-{ pkgs, ... }:
+{ pkgs, config, ... }:
 
 {
   fonts.fontconfig.enable = true;
 
   home.packages = with pkgs; with nerd-fonts; [
-    iosevka
+    (lib.mkIf config.opts.pkgs.i3 iosevka)
     monaspace
   ];
 }

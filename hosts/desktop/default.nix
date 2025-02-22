@@ -23,7 +23,5 @@
   virtualisation = import ../module/virtualisation.nix;
   users.users.helyo = import ../module/users/helyo.nix;
 
-  boot.loader.efi.efiSysMountPoint = "/boot/efi";
-
   networking.hostName = "desktop";
 }

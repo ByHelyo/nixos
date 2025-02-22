@@ -51,5 +51,11 @@ in
     picom = import ../services/picom;
   };
 
+  opts = {
+    pkgs = {
+      i3 = true;
+    };
+  };
+
   home.stateVersion = "24.05";
 }

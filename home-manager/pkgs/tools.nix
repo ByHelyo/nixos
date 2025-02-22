@@ -3,17 +3,18 @@
 with pkgs;
 [
   discord
-  (lib.mkIf config.opts.pkgs.slack slack)
-
-  flameshot
-  pavucontrol
-  nemo
 
   google-chrome
   chromium
   firefox-devedition
 
-  vlc
+  (lib.mkIf config.opts.pkgs.slack slack)
+
+  (lib.mkIf config.opts.pkgs.i3 flameshot)
+  (lib.mkIf config.opts.pkgs.i3 pavucontrol)
+  (lib.mkIf config.opts.pkgs.i3 nemo)
+  (lib.mkIf config.opts.pkgs.i3 vlc)
+
   (lib.mkIf config.opts.pkgs.obs obs-studio)
 
   (lib.mkIf config.opts.pkgs.insomnia insomnia)
