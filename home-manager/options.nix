@@ -38,6 +38,11 @@
           type = lib.types.bool;
           default = false;
         };
+
+        bruno = lib.mkOption {
+          type = lib.types.bool;
+          default = false;
+        };
       };
     };
   };

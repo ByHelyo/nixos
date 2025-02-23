@@ -28,6 +28,7 @@
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
       ++ (import ../pkgs/tools.nix { inherit pkgs config lib; })
+      ++ (import ../pkgs/editor.nix { inherit pkgs config lib; })
     ;
   };
 
@@ -39,6 +40,13 @@
     fish = import ../programs/fish { inherit pkgs; };
     starship = import ../programs/starship;
     vscode = import ../programs/vscode { inherit pkgs; };
+  };
+
+  opts = {
+    pkgs = {
+      insomnia = true;
+      cursor = true;
+    };
   };
 
   home.stateVersion = "24.05";
