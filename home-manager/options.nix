@@ -43,6 +43,12 @@
           type = lib.types.bool;
           default = false;
         };
+
+        vlc = lib.mkOption {
+          type = lib.types.bool;
+          default = false;
+        };
+
       };
     };
   };

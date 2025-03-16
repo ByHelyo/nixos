@@ -46,6 +46,8 @@
     pkgs = {
       insomnia = true;
       cursor = true;
+      vlc = true;
+      obs = true;
     };
   };
 

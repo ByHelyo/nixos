@@ -13,7 +13,8 @@ with pkgs;
   (lib.mkIf config.opts.pkgs.i3 flameshot)
   (lib.mkIf config.opts.pkgs.i3 pavucontrol)
   (lib.mkIf config.opts.pkgs.i3 nemo)
-  (lib.mkIf config.opts.pkgs.i3 vlc)
+
+  (lib.mkIf config.opts.pkgs.vlc vlc)
 
   (lib.mkIf config.opts.pkgs.obs obs-studio)
 
