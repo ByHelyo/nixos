@@ -48,6 +48,8 @@
       cursor = true;
       vlc = true;
       obs = true;
+      obsidian = true;
+      windsurf = true;
     };
   };
 

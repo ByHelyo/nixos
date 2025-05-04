@@ -17,4 +17,5 @@ with pkgs;
   gnumake
   brightnessctl
   xclip
+  stripe-cli
 ]
