@@ -18,7 +18,6 @@
     };
   };
 
-  virtualisation = import ../module/virtualisation.nix;
   users.users.helyo = import ../module/users/helyo.nix;
 
   networking.hostName = "ideapad";
