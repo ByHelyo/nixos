@@ -18,4 +18,5 @@ with pkgs;
   brightnessctl
   xclip
   stripe-cli
+  stremio
 ]
