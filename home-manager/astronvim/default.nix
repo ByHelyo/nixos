@@ -5,8 +5,13 @@
     enable = true;
     vimAlias = true;
 
+    extraPackages = with pkgs; [
+      vtsls
+    ];
+
     plugins = with pkgs;
-      [ rust-analyzer ]
+      [
+      ]
       ++ (with vimPlugins; [
         astrocore
         astrolsp
