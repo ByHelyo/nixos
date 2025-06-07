@@ -7,6 +7,7 @@
 
     extraPackages = with pkgs; [
       vtsls
+      rust-analyzer-nightly
     ];
 
     plugins = with pkgs;
