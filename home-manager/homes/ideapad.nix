@@ -54,6 +54,7 @@ in
   opts = {
     pkgs = {
       i3 = true;
+      vlc = true;
     };
   };
 
