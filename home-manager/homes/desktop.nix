@@ -50,6 +50,7 @@
       obs = true;
       obsidian = true;
       windsurf = true;
+      davinci = true;
     };
   };
 

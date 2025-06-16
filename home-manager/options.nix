@@ -54,6 +54,11 @@
           default = false;
         };
 
+        davinci = lib.mkOption {
+          type = lib.types.bool;
+          default = false;
+        };
+
       };
     };
   };

@@ -23,4 +23,6 @@ with pkgs;
 
   (lib.mkIf config.opts.pkgs.obsidian obsidian)
   (lib.mkIf config.opts.pkgs.krita krita)
+
+  (lib.mkIf config.opts.pkgs.davinci davinci-resolve)
 ]
