@@ -1,4 +1,4 @@
-{ pkgs }:
+{ pkgs, config, lib }:
 
 with pkgs;
 [
@@ -11,12 +11,13 @@ with pkgs;
   bat
   fzf
   git
-  docker-compose
   neofetch
-  kubectl
-  gnumake
   brightnessctl
   xclip
-  stripe-cli
-  stremio
+  ffmpeg
+
+  (lib.mkIf config.opts.pkgs.dev stripe-cli)
+  (lib.mkIf config.opts.pkgs.dev kubectl)
+  (lib.mkIf config.opts.pkgs.dev gnumake)
+  (lib.mkIf config.opts.pkgs.dev docker-compose)
 ]

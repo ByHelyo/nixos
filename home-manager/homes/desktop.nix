@@ -23,7 +23,7 @@
     homeDirectory = "/home/helyo";
 
     packages = with pkgs; [ ]
-      ++ (import ../pkgs/cli.nix { inherit pkgs; })
+      ++ (import ../pkgs/cli.nix { inherit pkgs config lib; })
       ++ (import ../pkgs/js.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
       ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
@@ -45,12 +45,13 @@
   opts = {
     pkgs = {
       insomnia = true;
-      cursor = true;
       vlc = true;
       obs = true;
       obsidian = true;
       windsurf = true;
+      cursor = true;
       davinci = true;
+      dev = true;
     };
   };
 

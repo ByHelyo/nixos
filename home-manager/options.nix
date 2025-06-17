@@ -4,6 +4,11 @@
   options = {
     opts = {
       pkgs = {
+        dev = lib.mkOption {
+          type = lib.types.bool;
+          default = false;
+        };
+
         insomnia = lib.mkOption {
           type = lib.types.bool;
           default = false;
@@ -39,11 +44,6 @@
           default = false;
         };
 
-        bruno = lib.mkOption {
-          type = lib.types.bool;
-          default = false;
-        };
-
         vlc = lib.mkOption {
           type = lib.types.bool;
           default = false;
@@ -58,7 +58,6 @@
           type = lib.types.bool;
           default = false;
         };
-
       };
     };
   };
