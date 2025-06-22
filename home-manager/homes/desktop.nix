@@ -45,7 +45,6 @@
   opts = {
     pkgs = {
       insomnia = true;
-      vlc = true;
       obs = true;
       obsidian = true;
       windsurf = true;

@@ -57,7 +57,6 @@ in
       i3 = true;
       obs = true;
       obsidian = true;
-      krita = true;
       insomnia = true;
       cursor = true;
     };
