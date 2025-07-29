@@ -51,6 +51,7 @@
       cursor = true;
       davinci = true;
       dev = true;
+      krita = true;
     };
   };
 
