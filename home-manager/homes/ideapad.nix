@@ -9,6 +9,7 @@ in
     ../i3
     ../fonts.nix
     ../options.nix
+    ../astronvim
   ];
 
   nixpkgs = {
@@ -28,8 +29,6 @@ in
     packages = with pkgs; [ ]
       ++ (import ../pkgs/cli.nix { inherit pkgs config lib; })
       ++ (import ../pkgs/js.nix { inherit pkgs; })
-      ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
-      ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
       ++ (import ../pkgs/tools.nix { inherit pkgs config lib; })
     ;
   };
@@ -42,7 +41,6 @@ in
     git = import ../programs/git;
     fish = import ../programs/fish { inherit pkgs; };
     starship = import ../programs/starship;
-    neovim = import ../programs/neovim { inherit pkgs lib; };
     vscode = import ../programs/vscode { inherit pkgs; };
   };
 
