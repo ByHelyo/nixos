@@ -48,6 +48,11 @@
           type = lib.types.bool;
           default = false;
         };
+
+        melonds = lib.mkOption {
+          type = lib.types.bool;
+          default = false;
+        };
       };
     };
   };

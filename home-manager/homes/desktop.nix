@@ -52,6 +52,7 @@
       davinci = true;
       dev = true;
       krita = true;
+      melonds = true;
     };
   };
 
