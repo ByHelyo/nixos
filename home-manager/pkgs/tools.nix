@@ -8,7 +8,7 @@ with pkgs;
   chromium
   firefox-devedition
 
-  stremio
+  #stremio
   vlc
 
   (lib.mkIf config.opts.pkgs.i3 flameshot)
