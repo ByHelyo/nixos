@@ -53,6 +53,11 @@
           type = lib.types.bool;
           default = false;
         };
+
+        rust = lib.mkOption {
+          type = lib.types.bool;
+          default = false;
+        };
       };
     };
   };

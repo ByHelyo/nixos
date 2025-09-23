@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, pkgs, ... }:
 
 {
   programs.neovim = {
@@ -7,7 +7,7 @@
 
     extraPackages = with pkgs; [
       vtsls
-      rust-analyzer-nightly
+      (lib.mkIf config.opts.pkgs.rust rust-analyzer-nightly)
     ];
 
     plugins = with pkgs;
