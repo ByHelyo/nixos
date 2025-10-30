@@ -3,6 +3,7 @@
 
   userName = "Helyo";
   userEmail = "byhelyo@gmail.com";
+
   aliases = {
     st = "status";
     ci = "commit -v";

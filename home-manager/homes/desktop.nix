@@ -49,7 +49,6 @@
       obsidian = true;
       windsurf = true;
       cursor = true;
-      davinci = true;
       dev = true;
       krita = true;
       melonds = true;
