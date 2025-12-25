@@ -46,8 +46,6 @@
     pkgs = {
       insomnia = true;
       obs = true;
-      obsidian = true;
-      windsurf = true;
       cursor = true;
       dev = true;
       krita = true;

@@ -56,7 +56,6 @@ in
     pkgs = {
       i3 = true;
       obs = true;
-      obsidian = true;
       insomnia = true;
       cursor = true;
     };

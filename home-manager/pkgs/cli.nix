@@ -17,7 +17,6 @@ with pkgs;
   ffmpeg
 
   (lib.mkIf config.opts.pkgs.dev stripe-cli)
-  (lib.mkIf config.opts.pkgs.dev kubectl)
   (lib.mkIf config.opts.pkgs.dev gnumake)
   (lib.mkIf config.opts.pkgs.dev docker-compose)
 ]
