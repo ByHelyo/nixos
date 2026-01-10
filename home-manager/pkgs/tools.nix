@@ -10,17 +10,10 @@ with pkgs;
 
   #stremio
   vlc
-
-  (lib.mkIf config.opts.pkgs.i3 flameshot)
-  (lib.mkIf config.opts.pkgs.i3 pavucontrol)
-  (lib.mkIf config.opts.pkgs.i3 nemo)
-
-  (lib.mkIf config.opts.pkgs.obs obs-studio)
-
-  (lib.mkIf config.opts.pkgs.insomnia insomnia)
-
-  (lib.mkIf config.opts.pkgs.krita krita)
-
-  (lib.mkIf config.opts.pkgs.melonds melonDS)
-
 ]
+++ (lib.optionals config.opts.pkgs.i3 [ flameshot pavucontrol nemo ])
+++ (lib.optionals config.opts.pkgs.i3 [ flameshot pavucontrol nemo ])
+++ (lib.optionals config.opts.pkgs.obs [ obs-studio ])
+++ (lib.optionals config.opts.pkgs.insomnia [ insomnia ])
+++ (lib.optionals config.opts.pkgs.krita [ krita ])
+++ (lib.optionals config.opts.pkgs.games [ melonDS ankama-launcher ])

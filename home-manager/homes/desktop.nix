@@ -26,7 +26,7 @@
       ++ (import ../pkgs/cli.nix { inherit pkgs config lib; })
       ++ (import ../pkgs/js.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
-      ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
+      ++ (lib.optionals config.opts.pkgs.rust (import ../pkgs/rust.nix { inherit pkgs fenix; }))
       ++ (import ../pkgs/tools.nix { inherit pkgs config lib; })
       ++ (import ../pkgs/editor.nix { inherit pkgs config lib; })
     ;
@@ -44,12 +44,12 @@
 
   opts = {
     pkgs = {
-      insomnia = true;
-      obs = true;
-      cursor = true;
       dev = true;
+      obs = true;
+      insomnia = true;
       krita = true;
-      melonds = true;
+
+      games = true;
     };
   };
 

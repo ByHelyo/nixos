@@ -31,7 +31,7 @@ in
       ++ (import ../pkgs/editor.nix { inherit pkgs config lib; })
       ++ (import ../pkgs/js.nix { inherit pkgs; })
       ++ (import ../pkgs/nix-tools.nix { inherit pkgs; })
-      ++ (import ../pkgs/rust.nix { inherit pkgs fenix; })
+      ++ (lib.optionals config.opts.pkgs.rust (import ../pkgs/rust.nix { inherit pkgs fenix; }))
       ++ (import ../pkgs/tools.nix { inherit pkgs config lib; })
     ;
   };
@@ -57,7 +57,6 @@ in
       i3 = true;
       obs = true;
       insomnia = true;
-      cursor = true;
     };
   };
 

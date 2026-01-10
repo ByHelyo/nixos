@@ -34,7 +34,7 @@
           default = false;
         };
 
-        melonds = lib.mkOption {
+        games = lib.mkOption {
           type = lib.types.bool;
           default = false;
         };

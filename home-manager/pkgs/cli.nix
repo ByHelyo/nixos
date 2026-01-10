@@ -15,8 +15,5 @@ with pkgs;
   brightnessctl
   xclip
   ffmpeg
-
-  (lib.mkIf config.opts.pkgs.dev stripe-cli)
-  (lib.mkIf config.opts.pkgs.dev gnumake)
-  (lib.mkIf config.opts.pkgs.dev docker-compose)
 ]
+++ (lib.optionals config.opts.pkgs.dev [ stripe-cli gnumake docker-compose ])
