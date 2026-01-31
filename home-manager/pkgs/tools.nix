@@ -16,4 +16,4 @@ with pkgs;
 ++ (lib.optionals config.opts.pkgs.obs [ obs-studio ])
 ++ (lib.optionals config.opts.pkgs.insomnia [ insomnia ])
 ++ (lib.optionals config.opts.pkgs.krita [ krita ])
-++ (lib.optionals config.opts.pkgs.games [ melonDS ankama-launcher ])
+++ (lib.optionals config.opts.pkgs.games [ melonDS ])

@@ -2,7 +2,7 @@
   enable = true;
 
   userName = "Helyo";
-  userEmail = "byhelyo@gmail.com";
+  userEmail = "70762494+ByHelyo@users.noreply.github.com";
 
   aliases = {
     st = "status";
